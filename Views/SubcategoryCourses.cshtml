@@ -1,0 +1,81 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+
+    var New_Articles = CurrentPage.Descendants().OrderBy("CreateDate desc").Take(1); //New Article
+
+    var articles = CurrentPage.Descendants(4).OrderBy("CreateDate desc").Except(New_Articles); //List Article
+
+}
+<div class="HomepageIntro">
+    <div class="row">
+        <div class="HomepageIntroContent">
+            <!--New Articles-->
+            <div class="small-12 medium-12 large-8 columns">
+                @{
+                    foreach (var New_Article in New_Articles)
+                    {
+                        <article class="NewArticle">
+                            <a href="@New_Article.Url">
+                                <img src="@New_Article.test @New_Article.CourseImageBanner">
+                            </a>
+                            <h1>@New_Article.Name</h1>
+                            <p>
+                                Browser games are, in the vast majority, developed using
+                                Flash technology, however more and more often we come
+                                across
+                            </p>
+                        </article>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="ArticleDisplay">
+    <!--Body Articles-->
+    <div class="row">
+
+        <div class="large-9 large-push-3 end columns">
+            <div class="RecentArticles">
+                <p>Browsing @CurrentPage.Name</p>
+                <h1>Recent Articles</h1>
+            </div>
+            @{
+                foreach (var article in articles.Take(12))
+                {
+                    <div class="small-12 medium-6 large-4 end columns">
+                        <article>
+                            <a href="@article.Url">
+                                <div class="level">@article.Filter</div>
+                                <img src="@article.test @article.CourseImageBanner">
+                                <div class="NewArticleContent">
+                                    <h3>June 30th, 2014</h3>
+                                    <h1>@article.Name</h1>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                }
+            }
+        </div>
+        <div class="show-for-large-up large-3 pull-9 end columns">
+            <div class="HomepageSidebar">
+                <ul class="SecondNavigation">
+                    <li>
+                        <nav class="CategoriesNaviation">
+                            <h3>Filters</h3>
+                            <ul>
+                                <li><a href="/@CurrentPage.Name/Beginner/"><i class="fa fa-list fa-fw fa-lg"></i><span>Beginner</span></a></li>
+                                <li><a href="/@CurrentPage.Name/Intermediate/"><i class="fa fa-list fa-fw fa-lg"></i><span>Intermediate</span></a></li>
+                                <li><a href="/@CurrentPage.Name/Advance/"><i class="fa fa-list fa-fw fa-lg"></i><span>Advance</span></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

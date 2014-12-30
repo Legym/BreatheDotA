@@ -1,0 +1,163 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+    var New_Articles = CurrentPage.Descendants().OrderBy("CreateDate desc").Take(1); //New Article
+
+    var articles = CurrentPage.Descendants(4).OrderBy("CreateDate desc").Except(New_Articles); //List Article
+}
+
+<section class="ArticleDisplayBlog">
+    <!--Body Articles-->
+    <div class="row">
+
+
+        <div class="large-9 large-push-3 end columns">
+            <div class="ContentBody">
+                <div class="RecentArticlesMetaTitle">
+                    <h1>@CurrentPage.Name</h1>
+
+                    <ul class="RecentArticlesMetaTitle2">
+                        <li class="RecentArticlesMetaTitleBlog">
+                            <p>
+                                <i class="fa fa-calendar"></i>
+                                <span>@CurrentPage.CreateDate.ToString("MMMM dd, yyyy")</span>
+                            </p>
+                        </li>
+                        <li class="RecentArticlesMetaTitleBlog">
+                            <p>
+                                <i class="fa fa-calendar"></i>
+                                <span>Map Version: 6.82</span>
+                            </p>
+                        </li>
+                        <li class="RecentArticlesMetaTitleBlog">
+                            <p>
+                                <i class="fa fa-user"></i>
+                                <span>Author: Legym</span>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p id="BlogDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis urna non ex iaculis iaculis. Cras id scelerisque nibh. Cras at dapibus nunc.</p>
+
+                </div>
+
+                <img src="@CurrentPage.test @CurrentPage.CourseImageBanner">
+                <br />
+                <br />
+
+                <p>
+                    Today we’d like to share a couple of tab styles with you. The collection contains some styles and effects  blandit purus dolor, et interdum ante elementum eu. Nam eget sollicitudin metus. Vestibulum hendrerit diam ipsum, in commodo lacus aliquet a. Phasellus eu faucibus lacus, eget sagittis metus. Mauris imperdiet vestibulum nibh, et euismod mi dictum et. Vestibulum non molestie nulla. Aenean ut vulputate tortor. Curabitur ac pellentesque justo, sit amet consequat magna.
+                    <br />
+                    <br />
+                </p>
+
+                <div class="introtitle">
+                    <h1>Where is Waldo?</h1>
+                </div>
+
+                <br />
+
+                <p>
+                    Today we’d like to share a couple of tab styles with you. The collection contains some styles and effects  blandit purus dolor, et interdum ante elementum eu. Nam eget sollicitudin metus. Vestibulum hendrerit diam ipsum, in commodo lacus aliquet a. Phasellus eu faucibus lacus, eget sagittis metus. Mauris imperdiet vestibulum nibh, et euismod mi dictum et. Vestibulum non molestie nulla. Aenean ut vulputate tortor. Curabitur ac pellentesque justo, sit amet consequat magna.
+                    <br />
+                    <br />
+
+                </p>
+
+            </div>
+        </div>
+
+        <div class="show-for-large-up large-3 pull-9 end columns">
+            <div class="HomepageSidebarBlog">
+                <div class="newsletter">
+                    <h3 class="widget-title">
+                        <span>The Newsletter</span>
+                    </h3>
+
+                    <div class="row">
+                        <div class="large-12 columns end NewsletterTitle">
+                            <ul>
+                                <li><img src="http://hydra-media.cursecdn.com/dota2.gamepedia.com/archive/8/8e/20120717000916%21Anti-Mage_icon.png"><p>Access our articles as soon as they are published</p></li>
+
+                                <li><img src="http://hydra-media.cursecdn.com/dota2.gamepedia.com/archive/5/59/20120717000933%21Dragon_Knight_icon.png"><p>Protect your privacy and learn to be the best.</p></li>
+
+                                <li><img src="http://hydra-media.cursecdn.com/dota2.gamepedia.com/archive/8/8d/20120717001021%21Io_icon.png"><p>Access our articles as soon as they are published</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <label>
+                                    <input type="text" placeholder="Email Address" />
+                                </label>
+                                <a href="#" class="button expand">Subscribe</a>
+
+                            </div>
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+                @*<div class="recommended">
+                        <h3 class="widget-title">
+                            <span>Recommended</span>
+                        </h3>
+                    </div>*@
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="TLDR">
+    <div class="shadow">
+        <div class="row">
+            <div class="large-9 columns end">
+                <h3>TL;DR VERSION</h3>
+
+                <ul>
+                    <li><span>Place your site search near the top of your homepage via an open text field.</span></li>
+                    <li><span>Make sure your site search returns the strongest results first, and implement smart-search features like autocomplete and spelling corrections.</span></li>
+                    <li><span>Offer filters to help users get what they need from search, but make sure users can't filter a search to return zero results.</span></li>
+                    <li><span>If your offerings can be easily narrowed by segment, asking a few questions upfront helps ensure visitors see relevant results.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="articlesExtended">
+    <div class="row">
+        <div class="large-6 columns">
+            <div class="ReleatedArticles">
+
+                <h3>Featured</h3>
+                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-1">
+                    <li>
+                        <img src="@CurrentPage.test" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="large-6 columns">
+            <div class="ReleatedArticles">
+                <h3>Related Articles</h3>
+                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+
+                    @Umbraco.RenderMacro("RecommendedArticles")
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        </div>
+
+
+</div>

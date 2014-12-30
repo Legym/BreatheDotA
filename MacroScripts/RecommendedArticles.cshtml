@@ -1,0 +1,23 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+
+@{
+    var Carry = Library.NodeById(1196).Children;
+    var Jungler = Library.NodeById(1201).Children;
+    var Offlane = Library.NodeById(1204).Children;
+    var Semi = Library.NodeById(1209).Children;
+    var Support = Library.NodeById(1213).Children;
+
+    var nodesList = Carry.Concat(Jungler).Concat(Offlane).Concat(Semi).Concat(Support).ToList();
+}
+
+@foreach (var item in nodesList.Random(4))
+{ 
+    <li>
+        <a href="#">
+            <img src="@item.CourseImageBanner" />
+            <div class="ReleatedPostTitle">
+                <h2>@item.Name</h2>
+            </div>
+        </a>
+    </li>
+}

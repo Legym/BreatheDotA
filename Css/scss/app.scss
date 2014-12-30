@@ -1,0 +1,881 @@
+
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+html {
+	font-size: 16px;
+	line-height: 1.42857em;
+}
+
+body {
+	/*background: #f6f6f0 url(/Media/bodyImage.jpg);*/
+    background: #EAEAEA;
+    height: 100%;
+}
+
+.top-bar {
+    height: 50px;
+    z-index: 99;
+    background-color: transparent;
+
+	.name h1 {
+		margin-right: 1em;
+	}
+}
+
+.contain-to-grid .top-bar {
+	max-width: 73.125rem;
+}
+
+.row {
+	max-width: 73.125rem
+}
+
+.column,
+.columns {
+    position: relative;
+    padding-left: 0.4375rem;
+    padding-right: 0.4375rem;
+    float: left;
+
+    @media #{$medium} {
+        .column,
+        .columns {
+            position: relative;
+            padding-left: 0.9375rem;
+            padding-right: 0.9375rem;
+            float: left;
+        }
+    }
+}
+
+.top-bar-section ul li > a {
+	font-family: 'league-gothic', sans-serif;
+	font-size: 1.375em;
+	color: white;
+	text-transform: uppercase;
+}
+
+.top-bar-section ul li {
+    background-color: #111;
+}
+
+.top-bar.expanded .title-area {
+    background-color: #111;
+}
+
+img.logo {
+    height: 45px;
+ 
+
+    @media #{$medium} { 
+        height: 75px;
+        margin-top: -10px;
+    }
+   
+}
+
+img.logo:hover {
+    opacity: 0.6;
+    Transition: color 0.2s ease-in-out;
+    Transition-property: background-color, border-color, color, opacity
+    
+}
+
+/*ul {
+    margin: 0;
+}*/
+
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    line-height: 50px;
+}
+
+.top-bar .name h1  {
+    line-height: 50px;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+    height: 28px;
+}
+
+
+
+// Homepage - Naviation
+.MainNaviation {
+    background-color: #111;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    height: 90px;
+    padding: 20px 0;
+
+    @media #{$medium} { 
+	background-color: #111;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    height: 122px;
+    padding: 36px 0;
+    }
+}
+
+
+.HomepageIntro {
+    height: 22em;
+    width: 100%;
+	padding-top: 2em;
+	background: url(/Media/dota.jpg) fixed;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.42);
+
+    @media #{$medium} {
+        height: auto;
+    }
+
+    @media (orientation:landscape) {
+        height: auto;
+    }
+
+
+}
+
+
+.NewArticle {
+
+	h1 {
+		font-size: 2em;
+		color: white;
+		font-weight: 900;
+		font-family: 'Roboto Condensed', sans-serif
+
+	}
+
+	p {
+		font-size: 1em;
+		color: white;
+		font-family: 'Roboto Condensed', sans-serif		
+
+	}
+
+	img {
+		float: right;
+		padding-bottom: 20px;
+	}
+
+    @media #{$medium} {
+        text-align: right;
+
+    	img {
+		    float: right;
+		    max-width: 67%;
+		    padding-left: 1.5em;
+		    padding-bottom: 20px;
+	    }
+    }
+
+    @media (orientation:landscape) {
+        img {
+		    float: right;
+		    max-width: 67%;
+		    padding-left: 1.5em;
+		    padding-bottom: 20px;
+	    }
+    }
+
+}
+
+
+.NewArticleContent {
+    background-color: white;
+    height: 125px;
+	padding: 1.2em .7em .7em .7em;
+	-webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);	
+	border-top: none;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.25);
+    border-radius: 2px;
+    margin-top: .5em;
+    margin-bottom: 1em;
+
+	    h3 {
+            color: #75716D;
+            font-size: 10px;
+            margin: 0;
+            font-family: "Roboto Condensed";
+            text-transform: uppercase;
+            font-weight: bold;
+	    }
+
+        &:before  {
+            border-width: 0 20px 21px 20px;
+            border-color: transparent transparent #fff transparent;
+            right: -70%;
+            top: -35px;
+            z-index: 2;
+            transition: all 0.2s ease-in-out;
+            border-style: solid;
+            content: ' ';
+            display: block;
+            height: 0px;
+            position: relative;
+            width: 0px;
+            margin-bottom: -1.5em;
+        }
+
+        @media #{$medium} { 
+	        height: 250px;
+            padding: 1.8em 1em 1em 1em;
+            margin-bottom: 2em;
+
+            h3 {
+                font-size: 12px;
+            }
+
+            &:before  {
+                border-width: 0 25px 26px 25px;
+                right: -75%;
+                top: -50px;
+                z-index: 2;
+            }
+        }
+
+        @media (orientation:portrait) {
+            height: 85px;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.ArticleDisplay {
+
+	article {
+		h1 {
+            font-size: 16px;
+            color: #171A1D;
+            font-family: 'league-gothic', sans-serif;
+            line-height: 1.3;
+            text-transform: capitalize;
+		}
+
+		p {
+			font-size: .675em;
+			color: rgba(0, 0, 0, 0.53);
+			font-family: 'Roboto', sans-serif;
+            margin-top: .5em;		
+		}
+        
+        img {
+            max-height: 100%;
+		    width: 100%;
+		    background-color: white;
+		    border-bottom: none;
+            display:block;
+            margin:auto;
+        }		
+	}
+
+     @media #{$medium} { 
+	    padding-top: 2em;
+
+        article {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+			    font-size: .875em;	
+		    }
+        }
+     }
+}
+
+.ArticleDisplayBlog {
+	padding-top: 2em;
+    border-top: 4px solid firebrick;
+
+	article {
+
+		h1 {
+            font-size: 24px;
+            color: #171A1D;
+            font-family: 'league-gothic', sans-serif;
+            line-height: 1.3;
+            text-transform: capitalize;
+		}
+
+		p {
+			font-size: .875em;
+			color: rgba(0, 0, 0, 0.53);
+			font-family: 'Roboto', sans-serif;
+            margin-top: .5em;		
+		}
+        
+        img {
+            max-height: 100%;
+		    width: 100%;
+		    background-color: white;
+		    border-bottom: none;
+            display:block;
+            margin:auto;
+        }		
+	}
+
+}
+
+
+.level {
+    position: absolute;
+    background-color: rgba(178, 34, 34, 0.78);
+    width: 7.5em;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: .3em;
+    font-family: arial,sans-serif;
+    margin: .5em;
+    left: 1px;
+    padding-left: 10px;
+
+    
+     @media #{$medium} { 
+	    position: absolute;
+	    width: auto;
+	    color: white;
+	    font-size: 12px;
+	    font-weight: bold;
+	    padding: .3em;
+	    font-family: arial,sans-serif;
+	    margin: .5em;
+        padding-left: 20px;
+     }
+}
+
+
+
+
+.ContentBody {
+    padding: 2em 1em;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: -31px;
+
+    p {
+        font-family: "Roboto Condensed";
+        color: rgba(0, 0, 0, 0.72);
+        font-size: 1.1em;
+        line-height: 1.7;
+    }
+}
+
+.RecentArticles {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: .4em;
+    margin-top: .2em;
+
+	h1 {
+        font-size: 30px;
+        font-family: "league-gothic";
+        color: #414a51;
+        text-transform: uppercase;
+        word-spacing: 2px;
+	}
+
+	p {
+		margin-bottom: -.5rem;
+		padding-left: 2px;
+		color: #90a6b3;
+		font-style: italic;
+		font-size: 14px;
+	}
+}
+
+
+.RecentArticlesMetaTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: .2em;
+
+	h1 {
+        font-size: 46px;
+        font-family: "league-gothic";
+        color: #262B2F;
+        text-transform: capitalize;
+        word-spacing: 2px;
+
+	}
+
+
+
+	p {
+        margin-bottom: -.5rem;
+        color: #9c9c9c;
+        font-style: italic;
+        font-size: 12px;
+	}
+
+    span {
+        font-style: normal;
+        font-size: 13px;
+        padding: 0px 2px;
+        font-family: "Roboto Condensed", Arial, sans-serif;
+        margin-left: 1px;
+    }
+}
+
+.RecentArticlesMetaTitle2 {
+    background-image: url(/Media/bg-border-light.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: .7em;
+}
+
+.RecentArticlesMetaTitleBlog {
+    display: inline-block;    
+    margin-right: 12px;
+}
+
+
+
+
+
+#BlogDescription {
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.HomepageSidebar {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.13);
+
+	ul {
+		text-decoration: none;
+		list-style: none;
+		margin: 0;
+	}
+
+	a {
+		font-size: 12px;
+		padding-left: 1em;
+        display: block;
+	}
+
+	p {
+		margin: 1rem 0 1rem 0;
+	}
+}
+
+.CategoriesNaviation {
+	padding: 1em 1em 0 1em;
+
+	span {
+		padding-left: .8em;
+		color: #333;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        vertical-align: text-bottom;
+	}
+
+	.fa {
+		color: #444;
+	}
+
+	h3 {
+        font-size: 20px;
+        color: white;
+        background-color: firebrick;
+        width: 200px;
+        position: relative;
+        left: -25px;
+        padding-left: 1.6em;
+        -webkit-box-shadow: 0 2px 1px rgba(34, 25, 25, 0.6);
+        font-family: 'League-gothic';
+        margin-bottom: .5em;
+	}
+
+    li {
+        padding: .2em 0;
+    }
+
+}
+
+.CategoriesNaviation li:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+
+
+
+
+
+.HomepageSidebarSeperate {
+	width: 75%;
+	display: block;
+	border: none;
+	border-top: 1px solid #D0D0D0;
+	margin: .5em 0;
+	margin: 0 auto;
+}
+
+
+.footerBackground {
+    background-color: #171717;
+    height: auto;
+    padding-top: 3em;
+    padding-bottom: 7em;
+
+    p {
+        font-size: 16px;
+        color: #949494;
+        font-family: "Roboto Condensed";
+    }
+
+    h3 {
+        color: white;
+        font-family: "Roboto Condensed";
+        font-size: 20px;
+    }
+
+    a {
+        color: #949494;
+        text-decoration: underline;
+    }
+}
+
+.footertitle {
+    border-bottom: 1px solid #444;
+    margin-bottom: 1.5em;
+    padding: 0 10px 20px 0;
+}
+
+.subscribeButton {
+	float: right;
+}
+
+.newsletter {
+    height: auto;
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.13);
+    padding: 20px;
+
+    span {
+        border-bottom: 2px solid #e23a3e;
+        padding: 0 20px 10px 0;
+        position: relative;
+        top: 1px;
+        max-width: 80%;
+        display: inline-block;
+        font-family: "Roboto Condensed";
+    }
+}
+
+
+.recommended {
+	height: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 1em;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    padding: 20px;
+
+    span {
+        border-bottom: 2px solid #e23a3e;
+        padding: 0 20px 10px 0;
+        position: relative;
+        top: 1px;
+        max-width: 80%;
+        display: inline-block;
+        font-family: "Roboto Condensed";
+    }
+}
+
+
+.introtitle {
+
+        h1 {
+            font-style: normal;
+            font-size: 2.1em;
+            padding: 0 0 0 .35em;
+            line-height: 1.2;
+            font-family: "league-gothic";
+            color: #262B2F;
+            border-left: 4px solid firebrick;
+            margin-bottom: .5em;
+        }
+}
+
+.widget-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    min-height: 41px;
+    display: block;
+    float: left;
+    width: 85%;
+}
+
+
+#sidebartitle {    
+
+    h2 {
+        font-size: 1em;
+        padding: 1em 1em .8em 1em;
+    }
+
+    img {
+        width: 75px;
+        height: 80px;
+        margin-right: 1.4em;
+        float: left;   
+        box-shadow: 4px 4px 2px black;
+        border-color: none;
+        border: 0;
+    }
+
+    h1 {
+        float: right;
+        width: 140px;
+        color: #333;
+        font-size: 13px;
+        font-family: arial,sans-serif;
+        margin-left: -1em;
+        font-weight: bold;
+        text-transform: none;
+    }
+
+    article {
+        display: block;
+        padding-top: 1em;      
+        padding-bottom: 1em;
+        height: 100px;
+    }
+
+    h3 {
+        font-size: .7rem;
+        color: gray;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: firebrick;
+        position: relative;
+        left: -10px;
+        padding-left: 1.2em;
+        -webkit-box-shadow: 0 2px 1px rgba(34, 25, 25, 0.6);
+        display: block;
+        width: 170px;
+        height: 23px;
+        padding-top: 6px;
+        font-family: 'Roboto Condensed';
+    }
+}
+
+
+.TLDR {
+    width: 100%;
+    background: url(/Media/dota.jpg) fixed;    
+    margin: 3.5em 0;
+
+    h3 {
+        font-size: 46px;
+        line-height: 1;
+        margin: 0 0 18px;
+        color: firebrick;
+        font-family: "League-Gothic";
+    }
+
+    span {
+        color: #F2F2F2;
+        font-size: 16px;
+        list-style: square;
+        font-family: "Roboto Condensed";
+        line-height: 2em;     
+    }
+}
+
+.shadow {
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 2.5em 0;
+}
+
+.ReleatedArticles {
+
+    h3 {
+        font-style: normal;
+        font-size: 28px;
+        font-family: "league-gothic";
+        color: #2A3035;
+    }
+
+    li {
+        margin-bottom: -70px;
+    }
+}
+
+
+.FeatureArticles {
+
+    h3 {
+        font-style: normal;
+        font-size: 28px;
+        font-family: "league-gothic";
+        color: #2A3035;
+    }
+
+    img {
+        padding: 0.5em;
+        background: white;
+    }
+}
+
+.articlesExtended {
+    margin: 5em 0;
+}
+
+
+.HomepageSidebarBlog {
+	ul, li {
+		text-decoration: none;
+		list-style: none;
+		margin: 0;
+		padding-bottom: .25em;
+	}
+
+	a {
+		font-size: 12px;
+		padding-left: 1em;
+	}
+
+	p {
+		display: inline-block;
+        width: 79%;
+        height: 30px;
+        font-family: "Roboto Condensed";
+        font-size: .9em;
+        line-height: 1.4;
+	}
+
+    img {
+        display: inline-block;
+        margin-right: .8em;
+        vertical-align: baseline;
+    }
+}
+
+.NewsletterTitle {
+    margin-top: .7em;
+}
+
+.ReleatedPostTitle {
+    background-color: rgba(0, 0, 0, 0.52);
+    position: relative;
+    top: -63px;
+    height: 60px;
+
+    h2 {
+        font-size: 1em;
+        font-family: "Roboto Condensed";
+        color: #F2F2F2;
+        padding: 0 10px;
+        padding-top: 5px;
+        font-weight: bold;
+    }
+}
+
+ul.TopNavigation {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul.SecondNavigation {
+padding-bottom: 1.5em;
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+#cssmenu {
+    margin-top: .5em;
+
+        ul {
+            text-align: center;
+        }
+    
+        li {
+            display: inline-block;
+            width: 23%;
+        }
+
+        span {
+            font-size: 13px;
+            color: black;
+        }
+
+        a {
+            display: block;
+            border: 1px solid #d8d8d8;
+            border-radius: 3px 3px 0 0;
+            border: 1px solid #d8d8d8;
+            border-bottom: 0;
+            background: #efefef;
+            background: -moz-linear-gradient(top, #efefef, #e9e9e9);
+            background: -webkit-linear-gradient(top, #efefef,#e9e9e9);
+            background: -o-linear-gradient(top, #efefef,#e9e9e9);
+            background: -ms-linear-gradient(top, #efefef,#e9e9e9);
+            background: linear-gradient(to bottom, #efefef,#e9e9e9);
+            margin-top: 3px;
+            margin-right: 3px;
+            margin-bottom: 0;
+            text-decoration: none;
+            padding-top: 5px;
+            font-size: 13px;
+            line-height: 20px;
+            height: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid #d8d8d8;
+            padding-bottom: 25px
+        }
+}

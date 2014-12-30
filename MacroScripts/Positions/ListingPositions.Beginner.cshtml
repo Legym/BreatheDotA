@@ -1,0 +1,85 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+
+@{
+
+	var New_Articles = Model.Descendants().OrderBy("CreateDate desc").Take(1); //New Article
+    var Carry  = Library.NodeById(1195).Children;
+    var Jungler = Library.NodeById(1199).Children;
+    var Offlane = Library.NodeById(1203).Children;
+    var Semi = Library.NodeById(1207).Children;
+    var Support = Library.NodeById(1211).Children;
+
+    var nodesList = Carry.Concat(Jungler).Concat(Offlane).Concat(Semi).Concat(Support).ToList();
+    	
+    int pageSize; // How many items per page
+    int page; // The page we are viewing
+
+    /* Set up parameters */
+
+    if (!int.TryParse(Parameter.PageSize, out pageSize))
+    {
+        pageSize = 12;
+    }
+
+    if (!int.TryParse(Request.QueryString["page"], out page))
+    {
+        page = 1;
+    }
+
+    /* This is your basic query to select the nodes you want */
+
+
+
+
+    int totalNodes = nodesList.Count();
+    int totalPages = (int)Math.Ceiling((double)totalNodes / (double)pageSize);
+
+    /* Bounds checking */
+
+    if (page > totalPages)
+    {
+        page = totalPages;
+    }
+    else if (page < 1)
+    {
+        page = 1;
+    }
+}
+
+
+<!--Shows Articles when they were created-->
+@foreach (var item in nodesList.Skip((page - 1) * pageSize).Take(pageSize))
+{
+    <div class="small-12 medium-6 large-4 end columns">
+        <article>
+            <a href="@item.Url">
+                <div class="level">@item.Filter</div>
+                <img src="@item.CourseImageBanner"/>
+
+                <div class="NewArticleContent">
+                    <h3>@item.CreateDate.ToString("MMMM dd, yyyy")</h3>
+                    <h1>@item.Name</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis urna non ex iaculis iaculis.  Morbi quis urna non ex iaculis.ssss</p>
+                </div>
+            </a>
+        </article>
+    </div>
+}
+
+
+<!--Paging System-->
+<div class="row">
+    <div class="columns large-12">
+        <div class="paging">
+            <ul class="pagination">
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                @for (int p = 1; p < totalPages + 1; p++)
+                {
+                    string selected = (p == page) ? "selected" : String.Empty;
+                    <li class="@selected"><a href="?page=@p">@p</a></li>
+                }
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

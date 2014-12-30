@@ -1,0 +1,268 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BreatheDota</title>
+    <link rel="shortcut icon" type="image/png" href="/Media/Favicon.png"/>
+
+    <link rel="stylesheet" href="/Css/stylesheets/app.css" />
+    <script src="/Css/bower_components/modernizr/modernizr.js"></script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="//use.typekit.net/pxv3vqd.js"></script>
+    <script>try { Typekit.load(); } catch (e) { }</script>
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta name="google-site-verification" content="2gMOp-0ix71PkWO9_qd1XfOaOod643vZc86R4_oiUxQ" />
+
+
+
+
+</head>
+
+<body>
+
+    <header class="MainNaviation contain-to-grid">
+        <nav class="top-bar" data-topbar data-options="is_hover: false">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="/"><img src="~/Media/logo.svg" class="logo" /></a></h1>
+                </li>
+
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Left Nav Section Small only -->
+                @*<ul class="right show-for-small-only">
+                    <li class="has-dropdown">
+                        <a href="/">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Most Recent</a></li>
+                            <li><a href="#">Introduction into Dota</a></li>
+                            <li><a href="#">Random</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="/Positions/">Positions</a>
+                        <ul class="dropdown">
+                            <li class="show-for-small-only"><a href="/Positions/">Positions Home</a></li>
+                            <li><a href="/Positions/Carry/">Carry</a></li>
+                            <li><a href="/Positions/Support">Support</a></li>
+                            <li><a href="/Positions/Jungler">Jungler</a></li>
+                            <li><a href="/Positions/Semi-Carry">Semi-Carry</a></li>
+                            <li><a href="/Positions/Offlane">Offlane</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/Metagame/">Metagame</a>
+                    </li>
+
+                    <li>
+                        <a href="/Mechanics/">Mechanics</a>
+                    </li>
+
+                    <li><a href="/Heroes/">Heroes</a></li>
+
+                </ul>*@
+
+
+
+
+                <!--Left Nav Section Medium Only -->
+                <ul class="right show-for-medium-only">
+                    <li class="has-dropdown">
+                        <a href="#">Menu</a>
+                        <ul class="dropdown">
+                            <li class="has-dropdown">
+                                <a href="/">Home</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Most Recent</a></li>
+                                    <li><a href="#">Introduction into Dota</a></li>
+                                    <li><a href="#">Random</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-dropdown">
+                                <a href="/Positions/">Positions</a>
+                                <ul class="dropdown">
+                                    <li class="show-for-small-only"><a href="/Positions/">Positions Home</a></li>
+                                    <li><a href="/Positions/Carry/">Carry</a></li>
+                                    <li><a href="/Positions/Support">Support</a></li>
+                                    <li><a href="/Positions/Jungler">Jungler</a></li>
+                                    <li><a href="/Positions/Semi-Carry">Semi-Carry</a></li>
+                                    <li><a href="/Positions/Offlane">Offlane</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="/Metagame/">Metagame</a>
+                            </li>
+
+                            <li>
+                                <a href="/Mechanics/">Mechanics</a>
+                            </li>
+
+                            <li><a href="/Heroes/">Heroes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+
+                <!--Medium and larger -->
+                <ul class="right show-for-large-up">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Positions/">Positions</a></li>
+                    <li><a href="/Metagame/">Metagame</a></li>
+                    <li><a href="/Mechanics/">Mechanics</a></li>
+                    <li><a href="/Heroes/">Heroes</a></li>
+                </ul>
+
+
+
+            </section>
+
+
+        </nav>
+    </header>
+
+
+    @RenderBody()
+
+    <div class="footerBackground">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="footertitle">
+                    <img src="/Media/logo.svg" width=150px; height=200px">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-4 medium-4 small-12 columns end">
+                <h3>Stay Connected</h3>
+
+                <p>
+                    <a href="#">Facebook</a>
+                    <br />
+                    <a href="#">Twitter</a>
+                    <br />
+                    <a href="#">Reddit</a>
+                    <br />
+                    <br />
+                </p>
+
+
+
+                <h3>Newsletter</h3>
+                <p>
+                    Subscribe to our newsletter and stay up to date with the latest tips!
+                </p>
+                <form>
+                    <div class="row">
+                        <div class="large-10 columns end">
+                            <label>
+                                <input type="text" placeholder="Email Address" />
+                            </label>
+                            <a href="#" class="button alert expand">Subscribe</a>
+
+                        </div>
+                    </div>
+                </form>s
+
+
+
+
+
+            </div>
+
+            <div class="large-5 medium-4 small-12 columns end">
+                <h3>About BreatheDotA</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br />
+                    <br />
+                    Sed tempus orci enim, sed aliquam orci consectetur quis. Morbi nec eros varius, ullamcorper ante eget, suscipit magna.
+                    <br />
+                    <br />
+                    Pellentesque laoreet, justo quis gravida semper, odio justo fermentum diam, viverra interdum dolor metus sed felis
+                    <br />
+                    <br />
+                    Vestibulum facilisis tristique est ut faucibus. Sed suscipit aliquam purus, finibus bibendum nisl mollis.s
+                    <br />
+                    <br />
+                    Nam aliquet magna vel urna euismod molestie. 
+                    <br />
+                    <br />
+                    Aliquam et odio elit
+                </p>
+
+
+            </div>
+
+            <div class="large-3 medium-4 small-12 columns">
+                <h3>General Info</h3>
+                <p>
+                    <a href="#">Suggest a Tip!</a>
+                    <br />
+                    <a href="#">Contact Form</a>
+                    <br />
+                    <a href="#">Mototaxi Junket</a>
+                    <br />
+                </p>
+
+
+
+                <h3>Advertising</h3>
+
+                <p>
+                    <a href="#">Facebook</a>
+                    <br />
+                    <a href="#">Twitter</a>
+                    <br />
+                    <a href="#">Reddit</a>
+                    <br />
+                </p>
+
+                    <h3>Policies</h3>
+
+                <p>
+                    <a href="#">Terms of Use</a>
+                    <br />
+                    <a href="#">Cookies & Privacy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/Css/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/Css/bower_components/foundation/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+
+
+</body>
+</html>
+
+

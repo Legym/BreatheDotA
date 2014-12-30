@@ -1,0 +1,118 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+
+    var New_Articles = CurrentPage.Descendants(5).OrderBy("CreateDate desc").Take(1); //New Article
+    var articles = CurrentPage.Descendants(4).OrderBy("CreateDate desc").Except(New_Articles); //List Article
+
+}
+
+<div class="row">
+    <div class="show-for-small-only small-12 columns">
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='/Positions/'><span>Positions</span></a></li>
+                <li><a href='/Metagame/'><span>Metagame</span></a></li>
+                <li><a href='/Mechanics/'><span>Mechanics</span></a></li>
+                <li><a href='/Heroes/'><span>Heroes</span></a></li>
+            </ul>
+
+            <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <option value="">Select a Category</option>
+                <option value="/Metagame/Fundamentals/">Fundamentals</option>
+            </select>
+
+            <select onchange="location = this.options[this.selectedIndex].value;">
+                <option value="">Experience Filter</option>
+                <option value="/">All</option>
+                <option value="/Metagame/Beginner/">Beginner</option>
+                <option value="/Metagame/Intermediate/">Intermediate</option>
+                <option value="/Metagame/Advance/">Advance</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="HomepageIntro">
+    <div class="row">
+        <div class="HomepageIntroContent">
+            <!--New Articles-->
+            <div class="small-12 medium-12 large-8 columns">
+                @{
+                    foreach (var New_Article in New_Articles)
+                    {
+                        <article class="NewArticle">
+                            <a href="@New_Article.Url">
+                                <img src="@New_Article.CourseImageBanner">
+                            </a>
+                            <h1>@New_Article.Name</h1>
+                            <p>
+                                Browser games are, in the vast majority, developed using
+                                Flash technology, however more and more often we come
+                                across``
+                            </p>
+                        </article>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<section class="ArticleDisplay">
+    <!--Body Articles-->
+    <div class="row">
+        <div class="large-9 large-push-3 columns">
+            <div class="RecentArticles">
+                <p>Browsing @CurrentPage.Name</p>
+                <h1>Recent Articles</h1>
+            </div>
+				
+            @Umbraco.RenderMacro("ListingMetagame.Advance.cshtml")
+				
+        </div>
+        <div class="show-for-large-up large-3 pull-9 columns">
+            <div class="HomepageSidebar">
+                <ul class="TopNavigation">
+                    <li>
+                        <nav class="CategoriesNaviation">
+                            <h3>Categories</h3>
+                            <ul>
+                                <li><a href="/Metagame/Fundamentals/"><i class="fa fa-home fa-fw fa-2x"></i><span>Fundamentals</span></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+                <ul class="SecondNavigation">
+                    <li>
+                        <nav class="CategoriesNaviation">
+                            <h3>Filters</h3>
+                            <ul>
+                                <li>
+                                    <a href="/Metagame/">
+                                        <i class="fa fa-list fa-fw fa-2x"></i><span>All</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="/Metagame/Beginner/">
+                                        <i class="fa fa-list fa-fw fa-2x"></i><span>Beginner</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Metagame/Intermediate/">
+                                        <i class="fa fa-list fa-fw fa-2x"></i><span>Intermediate</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Metagame/Advance/">
+                                        <i class="fa fa-list fa-fw fa-2x"></i><span>Advance</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
