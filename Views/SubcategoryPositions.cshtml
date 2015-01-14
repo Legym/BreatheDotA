@@ -7,38 +7,6 @@
     //var articles = CurrentPage.Descendants(5).OrderBy("CreateDate desc").Except(New_Articles); //List Article	
 }
 
-<div class="row">
-    <div class="show-for-small-only small-12 columns">
-        <div id='cssmenu'>
-            <ul>
-                <li><a href='/Positions/'><span>Positions</span></a></li>
-                <li><a href='/Metagame/'><span>Metagame</span></a></li>
-                <li><a href='/Mechanics/'><span>Mechanics</span></a></li>
-                <li><a href='/Heroes/'><span>Heroes</span></a></li>
-            </ul>
-
-            <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                <option value="">Select a Category</option>
-                <option value="/Positions/Carry/">Carry</option>
-                <option value="/Positions/Support/">Support</option>
-                <option value="/Positions/Semi-Carry/">Semi-Carry</option>
-                <option value="/Positions/Offlane/">Offlane</option>
-                <option value="/Positions/Jungler/">Jungler</option>
-            </select>
-
-            <select onchange="location = this.options[this.selectedIndex].value;">
-                <option value="/">Experience Filter</option>
-                <option value="/">All</option>
-                <option value="/Beginner/">Beginner</option>
-                <option value="/Intermediate/">Intermediate</option>
-                <option value="/Advance/">Advance</option>
-            </select>
-        </div>
-    </div>
-</div>
-
-
-
 <div class="HomepageIntro">
     <div class="row">
         <div class="HomepageIntroContent">
@@ -94,11 +62,36 @@
                         <nav class="CategoriesNaviation">
                             <h3>Categories</h3>
                             <ul>
-                                <li><a href="/Positions/Carry/"><i class="fa fa-home fa-fw fa-2x"></i><span>Carry</span></a></li>
-                                <li><a href="/Positions/Support/"><i class="fa fa-bookmark fa-fw fa-2x"></i><span>Support</span></a></li>
-                                <li><a href="/Positions/Semi-Carry/"><i class="fa fa-circle fa-fw fa-2x"></i><span>Semi-Carry</span></a></li>
-                                <li><a href="/Positions/Offlane/"><i class="fa fa-leaf fa-fw fa-2x"></i><span>Offlane</span></a></li>
-                                <li><a href="/Positions/Jungler/"><i class="fa fa-phone fa-fw fa-2x"></i><span>Jungler</span></a></li>
+                                <li>
+                                    <a href="/Positions/Carry/">
+                                        <i class="fa fa-home fa-fw fa-2x"></i>
+                                        <span>Carry</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Support/">
+                                        <i class="fa fa-bookmark fa-fw fa-2x"></i>
+                                        <span>Support</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Semi-Carry/">
+                                        <i class="fa fa-circle fa-fw fa-2x"></i>
+                                        <span>Semi-Carry</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Offlane/">
+                                        <i class="fa fa-leaf fa-fw fa-2x"></i>
+                                        <span>Offlane</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Jungler/">
+                                        <i class="fa fa-phone fa-fw fa-2x"></i>
+                                        <span>Jungler</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </li>
@@ -107,12 +100,12 @@
                 <ul class="SecondNavigation">
                     <li>
                         <nav class="CategoriesNaviation">
-                            <h3>Filters</h3>
+                            <h3>Experience Filter</h3>
 
                             <ul>
-                                <li>
+                                <li class="Selected">
                                     <a href="/Positions/">
-                                        <i class="fa fa-list fa-fw fa-2x"></i><span>All</span>
+                                        <i class="fa fa-list fa-fw fa-2x"></i><span>No Filter</span>
                                     </a>
                                 </li>
 

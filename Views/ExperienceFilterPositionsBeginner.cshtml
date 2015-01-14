@@ -76,6 +76,8 @@
             @Umbraco.RenderMacro("ListingPositions.Beginner")
 
         </div>
+
+        <!-- Menu is hardcoded because of MacroScript. Example: /Positions/Positions/Beginner-->
         <div class="show-for-large-up large-3 pull-9 columns">
             <div class="HomepageSidebar">
                 <ul class="TopNavigation">
@@ -95,14 +97,13 @@
                 <ul class="SecondNavigation">
                     <li>
                         <nav class="CategoriesNaviation">
-                            <h3>Filters</h3>
+                            <h3>Experience Filter</h3>
                             <ul>
                                 <li>
                                     <a href="/Positions/">
-                                        <i class="fa fa-list fa-fw fa-2x"></i><span>All</span>
+                                        <i class="fa fa-list fa-fw fa-2x"></i><span>No Filter</span>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="/Positions/Beginner/">
                                         <i class="fa fa-list fa-fw fa-2x"></i><span>Beginner</span>
@@ -124,5 +125,6 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </section>

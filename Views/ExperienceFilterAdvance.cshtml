@@ -62,78 +62,22 @@
     </div>
 </div>
 
-
 <section class="ArticleDisplay">
     <!--Body Articles-->
     <div class="row">
-        <div class="large-9 large-push-3 columns">
+
+        <div class="large-9 large-push-3 end columns">
             <div class="RecentArticles">
-                <p>Browsing @CurrentPage.Name</p>
+                <p>Browsing <span>@CurrentPage.Name</span></p>
                 <h1>Recent Articles</h1>
             </div>
 
+            <!--Shows 9 Articles on Homepage/Advance-->
             @Umbraco.RenderMacro("ListingHomepage.Advance")
-
         </div>
-        <div class="show-for-large-up large-3 pull-9 columns">
-            <div class="HomepageSidebar">
-                <ul class="TopNavigation">
-                    <li>
-                        <nav class="CategoriesNaviation">
-                            <h3>Categories</h3>
-                            <ul class="TopNavigationSmall">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-home fa-fw fa-2x"></i><span>Newest Articles</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-bookmark fa-fw fa-2x"></i><span>Recommended</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-circle fa-fw fa-2x"></i><span>Introduction to DOTA2</span>
-                                    </a>
-                                </li>
 
-                            </ul>
-                        </nav>
-                    </li>
-                </ul>
+            <!--Menu and Experience Filter-->
+            @Umbraco.RenderMacro("Menu")
 
-                <ul class="SecondNavigation">
-                    <li>
-                        <nav class="CategoriesNaviation">
-                            <h3>Filters</h3>
-                            <ul>
-                                <li>
-                                    <a href="/">
-                                        <i class="fa fa-list fa-fw fa-2x"></i><span>All</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="/Beginner/">
-                                        <i class="fa fa-list fa-fw fa-2x"></i><span>Beginner</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Intermediate/">
-                                        <i class="fa fa-list fa-fw fa-2x"></i><span>Intermediate</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Advance/">
-                                        <i class="fa fa-list fa-fw fa-2x"></i><span>Advance</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
 </section>

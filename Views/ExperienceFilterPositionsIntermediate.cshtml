@@ -63,6 +63,7 @@
         </div>
     </div>
 </div>
+
 <section class="ArticleDisplay">
     <!--Body Articles-->
     <div class="row">
@@ -71,8 +72,12 @@
                 <p>Browsing @CurrentPage.Name</p>
                 <h1>Recent Articles</h1>
             </div>
+
             @Umbraco.RenderMacro("ListingPositions.Intermediate")
+
         </div>
+
+        <!-- Menu is hardcoded because of MacroScript. Example: /Positions/Positions/Beginner-->
         <div class="show-for-large-up large-3 pull-9 columns">
             <div class="HomepageSidebar">
                 <ul class="TopNavigation">
@@ -80,11 +85,36 @@
                         <nav class="CategoriesNaviation">
                             <h3>Categories</h3>
                             <ul>
-                                <li><a href="/Positions/Carry/"><i class="fa fa-home fa-fw fa-2x"></i><span>Carry</span></a></li>
-                                <li><a href="/Positions/Support/"><i class="fa fa-bookmark fa-fw fa-2x"></i><span>Support</span></a></li>
-                                <li><a href="/Positions/Semi-Carry/"><i class="fa fa-circle fa-fw fa-2x"></i><span>Semi-Carry</span></a></li>
-                                <li><a href="/Positions/Offlane/"><i class="fa fa-leaf fa-fw fa-2x"></i><span>Offlane</span></a></li>
-                                <li><a href="/Positions/Jungler/"><i class="fa fa-phone fa-fw fa-2x"></i><span>Jungler</span></a></li>
+                                <li>
+                                    <a href="/Positions/Carry/">
+                                        <i class="fa fa-home fa-fw fa-2x"></i>
+                                        <span>Carry</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Support/">
+                                        <i class="fa fa-bookmark fa-fw fa-2x"></i>
+                                        <span>Support</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Semi-Carry/">
+                                        <i class="fa fa-circle fa-fw fa-2x"></i>
+                                        <span>Semi-Carry</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Offlane/">
+                                        <i class="fa fa-leaf fa-fw fa-2x"></i>
+                                        <span>Offlane</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Positions/Jungler/">
+                                        <i class="fa fa-phone fa-fw fa-2x"></i>
+                                        <span>Jungler</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </li>
@@ -92,14 +122,13 @@
                 <ul class="SecondNavigation">
                     <li>
                         <nav class="CategoriesNaviation">
-                            <h3>Filters</h3>
+                            <h3>Experience Filter</h3>
                             <ul>
                                 <li>
                                     <a href="/Positions/">
-                                        <i class="fa fa-list fa-fw fa-2x"></i><span>All</span>
+                                        <i class="fa fa-list fa-fw fa-2x"></i><span>No Filter</span>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="/Positions/Beginner/">
                                         <i class="fa fa-list fa-fw fa-2x"></i><span>Beginner</span>
@@ -121,5 +150,6 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </section>

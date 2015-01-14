@@ -10,14 +10,30 @@
     var nodesList = Carry.Concat(Jungler).Concat(Offlane).Concat(Semi).Concat(Support).ToList();
 }
 
-@foreach (var item in nodesList.Random(4))
-{ 
-    <li>
-        <a href="#">
-            <img src="@item.CourseImageBanner" />
-            <div class="ReleatedPostTitle">
-                <h2>@item.Name</h2>
+<div class="articlesExtended">
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="ReleatedArticles">
+                <h3>Related Articles</h3>
+                <ul>
+
+                    @foreach (var item in nodesList.Random(4))
+                    {
+                        <li class="small-6 medium-3 large-3 columns">
+                            <a href="#">
+                                <img src="@item.CourseImageBanner" />
+                                <div class="ReleatedPostTitle">
+                                    <h2>@item.Name</h2>
+                                    <span>
+                                        This is an example of the description This is an example of the                         descriptionThis is an example of the description
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    }
+
+                </ul>
             </div>
-        </a>
-    </li>
-}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@{
+    var ProductList = Library.NodeById(1313).Children;
+}
+@foreach (var item in ProductList.Random(4))
+{
+    <div class="wobo">
+        <div class="Half-Ribbon">
+            <span>
+                99.99$
+            </span>
+        </div>
+
+        <img class="AmazonProductFormat" src="@item.ProductImage" />
+
+
+        <h2>@item.ProductName</h2>
+
+        <p>
+            Gaming-grade wireless: Reliable lag-free
+            performance with up to 40 ft. wireless range
+
+            Immersive 7.1 surround sound: Advanced
+            Dolby technology delivers detailed positional
+            audio
+        </p>
+
+        <div class="AmazonButtons">
+            <div class="AmazonPercent">
+                <span>-38%</span>
+            </div>
+
+            <div class="AmazonReview">
+                <a href="#">Review on Amazon</a>
+            </div>
+        </div>
+
+    </div>
+}

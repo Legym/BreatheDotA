@@ -12,6 +12,8 @@
     <link rel="shortcut icon" type="image/png" href="/Media/Favicon.png"/>
 
     <link rel="stylesheet" href="/Css/stylesheets/app.css" />
+    <link rel="stylesheet" href="/Css/TextStyles.css" />
+
     <script src="/Css/bower_components/modernizr/modernizr.js"></script>
 
 
@@ -26,6 +28,9 @@
 
     <meta name="google-site-verification" content="2gMOp-0ix71PkWO9_qd1XfOaOod643vZc86R4_oiUxQ" />
 
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+
 
 
 
@@ -39,50 +44,38 @@
                 <li class="name">
                     <h1><a href="/"><img src="~/Media/logo.svg" class="logo" /></a></h1>
                 </li>
-
                 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-
+                <li class="toggle-topbar menu-icon show-for-small"><a href="#"><span></span></a></li>
             </ul>
-
             <section class="top-bar-section">
                 <!-- Left Nav Section Small only -->
-                @*<ul class="right show-for-small-only">
-                    <li class="has-dropdown">
-                        <a href="/">Home</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Most Recent</a></li>
-                            <li><a href="#">Introduction into Dota</a></li>
-                            <li><a href="#">Random</a></li>
-                        </ul>
-                    </li>
+                <div id='cssmenu' class="show-for-small">
+                    <ul>
+                        <li><a href='/Positions/'><span>Positions</span></a></li>
+                        <li><a href='/Metagame/'><span>Metagame</span></a></li>
+                        <li><a href='/Mechanics/'><span>Mechanics</span></a></li>
+                        <li><a href='/Heroes/'><span>Heroes</span></a></li>
+                    </ul>
 
-                    <li class="has-dropdown">
-                        <a href="/Positions/">Positions</a>
-                        <ul class="dropdown">
-                            <li class="show-for-small-only"><a href="/Positions/">Positions Home</a></li>
-                            <li><a href="/Positions/Carry/">Carry</a></li>
-                            <li><a href="/Positions/Support">Support</a></li>
-                            <li><a href="/Positions/Jungler">Jungler</a></li>
-                            <li><a href="/Positions/Semi-Carry">Semi-Carry</a></li>
-                            <li><a href="/Positions/Offlane">Offlane</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="/Metagame/">Metagame</a>
-                    </li>
-
-                    <li>
-                        <a href="/Mechanics/">Mechanics</a>
-                    </li>
-
-                    <li><a href="/Heroes/">Heroes</a></li>
-
-                </ul>*@
-
-
-
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option value="">Select a Category</option>
+                                <option value="/Positions/Carry/">Introduction To Dota2</option>
+                                <option value="/Positions/Support/">Recommended</option>
+                                <option value="/Positions/SemiCarry/">Editors Choice</option>
+                                <option value="/Positions/Offlane/">Miscellaneous</option>
+                            </select>
+                            <select onchange="location = this.options[this.selectedIndex].value;">
+                                <option value="/">Experience Filter</option>
+                                <option value="/">All</option>
+                                <option value="/Beginner/">Beginner</option>
+                                <option value="/Intermediate/">Intermediate</option>
+                                <option value="/Advance/">Advance</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
                 <!--Left Nav Section Medium Only -->
                 <ul class="right show-for-medium-only">
@@ -97,7 +90,6 @@
                                     <li><a href="#">Random</a></li>
                                 </ul>
                             </li>
-
                             <li class="has-dropdown">
                                 <a href="/Positions/">Positions</a>
                                 <ul class="dropdown">
@@ -109,21 +101,16 @@
                                     <li><a href="/Positions/Offlane">Offlane</a></li>
                                 </ul>
                             </li>
-
                             <li>
                                 <a href="/Metagame/">Metagame</a>
                             </li>
-
                             <li>
                                 <a href="/Mechanics/">Mechanics</a>
                             </li>
-
-                            <li><a href="/Heroes/">Heroes</a></li>
+                            @*<li><a href="/Heroes/">Heroes</a></li>*@
                         </ul>
                     </li>
                 </ul>
-
-
 
 
                 <!--Medium and larger -->
@@ -132,17 +119,13 @@
                     <li><a href="/Positions/">Positions</a></li>
                     <li><a href="/Metagame/">Metagame</a></li>
                     <li><a href="/Mechanics/">Mechanics</a></li>
-                    <li><a href="/Heroes/">Heroes</a></li>
+                    @*<li><a href="/Heroes/">Heroes</a></li>*@
                 </ul>
-
-
 
             </section>
 
-
         </nav>
     </header>
-
 
     @RenderBody()
 
@@ -150,7 +133,7 @@
         <div class="row">
             <div class="large-12 columns">
                 <div class="footertitle">
-                    <img src="/Media/logo.svg" width=150px; height=200px">
+                    <img src="/Media/logo.svg" width=150px; height=auto">
                 </div>
             </div>
         </div>
@@ -159,16 +142,32 @@
             <div class="large-4 medium-4 small-12 columns end">
                 <h3>Stay Connected</h3>
 
-                <p>
-                    <a href="#">Facebook</a>
-                    <br />
-                    <a href="#">Twitter</a>
-                    <br />
-                    <a href="#">Reddit</a>
-                    <br />
-                    <br />
-                </p>
+                <ul class="SocialMedia">
+                    <li>
+                        <a href="https://www.facebook.com/breathedota">
+                            <i class="fa fa-facebook-square fa-3x"></i>
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="https://twitter.com/BreatheDotA">
+                            <i class="fa fa-twitter-square fa-3x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.reddit.com/user/BreatheDotA/">
+                            <i class="fa fa-reddit-square fa-3x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://plus.google.com/109953914358354575193/about">
+                            <i class="fa fa-google-plus-square fa-3x"></i>
+                        </a>
+                    </li>
+
+                </ul>
 
 
                 <h3>Newsletter</h3>
@@ -209,7 +208,7 @@
                     Vestibulum facilisis tristique est ut faucibus. Sed suscipit aliquam purus, finibus bibendum nisl mollis.s
                     <br />
                     <br />
-                    Nam aliquet magna vel urna euismod molestie. 
+                    Nam aliquet magna vel urna euismod molestie.
                     <br />
                     <br />
                     Aliquam et odio elit
@@ -242,7 +241,7 @@
                     <br />
                 </p>
 
-                    <h3>Policies</h3>
+                <h3>Policies</h3>
 
                 <p>
                     <a href="#">Terms of Use</a>
@@ -254,15 +253,38 @@
     </div>
 
 
-    <script src="/Css/bower_components/jquery/dist/jquery.min.js"></script>
+    @*<script src="/Css/bower_components/jquery/dist/jquery.min.js"></script>*@
     <script src="/Css/bower_components/foundation/js/foundation.min.js"></script>
+ 
+    <script>
+        (function ($) {
+            $.fn.activeNavigation = function (selector) {
+                var pathname = window.location.pathname
+                var hrefs = []
+                $(selector).find("a").each(function () {
+                    if (pathname.indexOf($(this).attr("href")) > -1)
+                        hrefs.push($(this))
+                })
+                if (hrefs.length) {
+                    hrefs.sort(function (a, b) {
+                        return b.attr("href").length - a.attr("href").length
+                    })
+                    hrefs[0].closest('li').addClass("Selected")
+                }
+            };
+        })(jQuery);
+    </script>
+
     <script>
         $(document).foundation();
     </script>
+
+    <script>
+        $(document).activeNavigation("ul.SecondNavigation")
+    </script>
+
 
 
 
 </body>
 </html>
-
-

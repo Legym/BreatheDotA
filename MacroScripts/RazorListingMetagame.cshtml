@@ -19,7 +19,7 @@
     /* This is your basic query to select the nodes you want */
 
     var New_Articles = Model.Descendants().OrderBy("CreateDate desc").Take(1); //New Article   
-    var nodes = Model.Descendants(5).OrderBy("CreateDate desc").Except(New_Articles);
+    var nodes = Model.Descendants(4).OrderBy("CreateDate desc").Except(New_Articles);
 
 
     int totalNodes = nodes.Count();

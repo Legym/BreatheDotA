@@ -7,8 +7,7 @@
 
     var articles = CurrentPage.Descendants(5).OrderBy("CreateDate desc").Except(New_Articles); //List Article
 
-
-    }
+}
 
 <section class="ArticleDisplayBlog">
     <!--Body Articles-->
@@ -74,59 +73,17 @@
                     </form>
 
                 </div>
-                @*<div class="recommended">
-                        <h3 class="widget-title">
-                            <span>Recommended</span>
-                        </h3>
-                    </div>*@
+
+
+                <div class="recommended">
+                    @Umbraco.RenderMacro("DisplayAmazonProducts")
+                </div>
+
+
             </div>
         </div>
     </div>
 </section>
 
-<div class="TLDR">
-    <div class="shadow">
-        <div class="row">
-            <div class="large-12 columns end">
-                <h3>TL;DR VERSION</h3>
-
-                <ul>
-                    <li><span>Place your site search near the top of your homepage via an open text field.</span></li>
-                    <li><span>Make sure your site search returns the strongest results first, and implement smart-search features like autocomplete and spelling corrections.</span></li>
-                    <li><span>Offer filters to help users get what they need from search, but make sure users can't filter a search to return zero results.</span></li>
-                    <li><span>If your offerings can be easily narrowed by segment, asking a few questions upfront helps ensure visitors see relevant results.</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="articlesExtended">
-    <div class="row">
-        <div class="large-6 columns">
-            <div class="ReleatedArticles">
-
-                <h3>Featured</h3>
-
-                <img src="@CurrentPage.CourseImageBanner" />
-
-            </div>
-        </div>
-
-        <div class="large-6 columns">
-            <div class="ReleatedArticles">
-                <h3>Related Articles</h3>
-                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
-
-					@Umbraco.RenderMacro("RecommendedArticles")
-
-                </ul>
-            </div>
-        </div>
-
-
-
-        </div>
-
-
-</div>
+<!--Article Section-->
+    @Umbraco.RenderMacro("RecommendedArticles")
