@@ -40,13 +40,20 @@
 
     <header class="MainNaviation contain-to-grid">
         <nav class="top-bar" data-topbar data-options="is_hover: false">
+
             <ul class="title-area">
                 <li class="name">
-                    <h1><a href="/"><img src="~/Media/logo.svg" class="logo" /></a></h1>
+                    <h1>
+                        <a href="/">
+                            <img src="~/Media/logo.svg" class="logo" />
+                        </a>
+                    </h1>
                 </li>
                 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
                 <li class="toggle-topbar menu-icon show-for-small"><a href="#"><span></span></a></li>
             </ul>
+
+
             <section class="top-bar-section">
                 <!-- Left Nav Section Small only -->
                 <div id='cssmenu' class="show-for-small">
@@ -112,7 +119,6 @@
                     </li>
                 </ul>
 
-
                 <!--Medium and larger -->
                 <ul class="right show-for-large-up">
                     <li><a href="/">Home</a></li>
@@ -121,19 +127,26 @@
                     <li><a href="/Mechanics/">Mechanics</a></li>
                     @*<li><a href="/Heroes/">Heroes</a></li>*@
                 </ul>
-
             </section>
 
         </nav>
     </header>
 
-    @RenderBody()
+
+
+
+        @RenderBody()
+
+
+
+
+
 
     <div class="footerBackground">
         <div class="row">
             <div class="large-12 columns">
                 <div class="footertitle">
-                    <img src="/Media/logo.svg" width=150px; height=auto">
+                    <img src="/Media/logo.svg" width=150px; height="auto">
                 </div>
             </div>
         </div>

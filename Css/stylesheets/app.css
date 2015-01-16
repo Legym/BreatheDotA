@@ -8049,41 +8049,43 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 43, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 html {
   font-size: 16px;
   line-height: 1.42857em;
+  overflow-x: hidden;
 }
 
-/* line 48, ../scss/app.scss */
+/* line 52, ../scss/app.scss */
 body {
   background-image: url(/Media/bg.png);
   /*background: #EAEAEA;*/
   height: 100%;
 }
 
-/* line 54, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 .top-bar {
   height: 50px;
   z-index: 99;
   background-color: transparent;
 }
-/* line 59, ../scss/app.scss */
+/* line 63, ../scss/app.scss */
 .top-bar .name h1 {
   margin-right: 1em;
 }
 
-/* line 64, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .contain-to-grid .top-bar {
   max-width: 79.125rem;
+  background-color: none;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .row {
   max-width: 79.125rem;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .column, .columns {
   position: relative;
   padding-left: 0.6375rem;
@@ -8099,79 +8101,85 @@ body {
   }*/
 }
 
-/* line 88, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 button, .button {
   margin: 0;
   font-family: "League-Gothic", sans-serif;
   font-size: 1.4em;
 }
 
-/* line 95, ../scss/app.scss */
+/* line 100, ../scss/app.scss */
 .top-bar-section ul li > a {
   font-family: 'league-gothic', sans-serif;
   font-size: 1.375em;
   color: white;
   text-transform: uppercase;
-  padding: 20px;
 }
 
-/* line 103, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .top-bar-section li:not(.has-form) a:not(.button):hover {
   background: none;
   color: #bdbdbd;
 }
 
-/* line 108, ../scss/app.scss */
+/* line 112, ../scss/app.scss */
 .top-bar-section ul li {
   background-color: whitesmoke;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 108, ../scss/app.scss */
+  /* line 112, ../scss/app.scss */
   .top-bar-section ul li {
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.53);
   }
 }
 
-/* line 116, ../scss/app.scss */
+/* line 120, ../scss/app.scss */
+.top-bar .name h1 a {
+  padding-left: 5px;
+}
+
+/* line 124, ../scss/app.scss */
 .top-bar.expanded .title-area {
   background-color: #111;
 }
 
-/* line 120, ../scss/app.scss */
+/* line 128, ../scss/app.scss */
 img.logo {
   height: 45px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 120, ../scss/app.scss */
+  /* line 128, ../scss/app.scss */
   img.logo {
     height: 55px;
-    margin-top: -5px;
   }
 }
 
-/* line 131, ../scss/app.scss */
+/* line 138, ../scss/app.scss */
 img.logo:hover {
   opacity: 0.6;
+  -webkit-Transition: color 0.2s ease-in-out;
+  -moz-Transition: color 0.2s ease-in-out;
+  -o-Transition: color 0.2s ease-in-out;
   Transition: color 0.2s ease-in-out;
   Transition-property: background-color, border-color, color, opacity;
 }
 
-/* line 138, ../scss/app.scss */
+/* line 149, ../scss/app.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   line-height: 50px;
 }
 
-/* line 142, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 .top-bar .name h1 {
   line-height: 50px;
 }
 
-/* line 146, ../scss/app.scss */
+/* line 157, ../scss/app.scss */
 .top-bar .toggle-topbar.menu-icon a {
   height: 28px;
 }
 
-/* line 153, ../scss/app.scss */
+/* line 163, ../scss/app.scss */
 .MainNaviation {
   background-color: #111;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
@@ -8179,77 +8187,84 @@ img.logo:hover {
   padding: 10px 0;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 153, ../scss/app.scss */
+  /* line 163, ../scss/app.scss */
   .MainNaviation {
-    background-color: #111;
     height: 95px;
     padding: 23px 0;
+    background-color: transparent;
   }
 }
 
-/* line 168, ../scss/app.scss */
+/* line 178, ../scss/app.scss */
 .HomepageIntro {
-  padding-top: 2em;
+  padding: 2em 0;
   background: url(/Media/dota.jpg) fixed;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.42);
-  background-position-y: 50px;
+  padding-bottom: 30px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 168, ../scss/app.scss */
+  /* line 178, ../scss/app.scss */
   .HomepageIntro {
-    height: 339px;
+    height: 500px;
+    position: relative;
+    top: -100px;
+    padding: 130px 30px 30px 30px;
   }
 }
 @media (orientation: landscape) {
-  /* line 168, ../scss/app.scss */
+  /* line 178, ../scss/app.scss */
   .HomepageIntro {
     height: auto;
   }
 }
 
-/* line 187, ../scss/app.scss */
-.NewArticle {
-    /*@media (orientation:landscape) {
-        img {
-		    float: right;
-		    max-width: 67%;
-		    padding-left: 1.5em;
-		    padding-bottom: 20px;
-	    }
-    }*/
+/* line 200, ../scss/app.scss */
+.BlogIntroNavigation {
+  	/*padding: 2em 0;
+  	background: url(/Media/dota.jpg) fixed;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.42);
+      padding-bottom: 30px;*/
 }
-/* line 189, ../scss/app.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 200, ../scss/app.scss */
+  .BlogIntroNavigation {
+    height: 500px;
+    position: relative;
+    top: -100px;
+    padding-top: 80px;
+    background: url(/Media/dota.jpg) fixed;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.42);
+    padding-bottom: 30px;
+  }
+}
+@media (orientation: landscape) {
+  /* line 200, ../scss/app.scss */
+  .BlogIntroNavigation {
+    height: auto;
+  }
+}
+
+/* line 226, ../scss/app.scss */
 .NewArticle h1 {
   font-size: 2em;
   color: white;
   font-family: "Roboto Condensed", sans-serif;
 }
-/* line 196, ../scss/app.scss */
+/* line 233, ../scss/app.scss */
 .NewArticle p {
   font-size: 1em;
   color: white;
   font-family: "Roboto Condensed", sans-serif;
 }
-/* line 203, ../scss/app.scss */
-.NewArticle img {
-  float: left;
-  padding-bottom: 20px;
-}
 @media only screen and (min-width: 40.063em) {
-  /* line 187, ../scss/app.scss */
-  .NewArticle {
-    text-align: left;
-  }
-  /* line 211, ../scss/app.scss */
+  /* line 246, ../scss/app.scss */
   .NewArticle img {
-    float: left;
-    max-width: 63%;
-    padding-right: .6em;
-    padding-bottom: 20px;
+    max-width: 90%;
+    float: right;
   }
 }
 
-/* line 231, ../scss/app.scss */
+/* line 255, ../scss/app.scss */
 .NewArticleContent {
   background-color: white;
   height: 125px;
@@ -8261,7 +8276,7 @@ img.logo:hover {
   margin-top: .5em;
   margin-bottom: 1em;
 }
-/* line 242, ../scss/app.scss */
+/* line 266, ../scss/app.scss */
 .NewArticleContent h3 {
   color: #75716D;
   font-size: 10px;
@@ -8270,7 +8285,7 @@ img.logo:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 251, ../scss/app.scss */
+/* line 275, ../scss/app.scss */
 .NewArticleContent:before {
   border-width: 0 20px 21px 20px;
   border-color: transparent transparent #fff transparent;
@@ -8281,23 +8296,23 @@ img.logo:hover {
   border-style: solid;
   content: ' ';
   display: block;
-  height: 0px;
+  height: 0;
   position: relative;
-  width: 0px;
+  width: 0;
   margin-bottom: -1.5em;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 231, ../scss/app.scss */
+  /* line 255, ../scss/app.scss */
   .NewArticleContent {
     height: 250px;
     padding: 1.8em 1em 1em 1em;
     margin-bottom: 2em;
   }
-  /* line 272, ../scss/app.scss */
+  /* line 296, ../scss/app.scss */
   .NewArticleContent h3 {
     font-size: 12px;
   }
-  /* line 276, ../scss/app.scss */
+  /* line 300, ../scss/app.scss */
   .NewArticleContent:before {
     border-width: 0 25px 26px 25px;
     right: -75%;
@@ -8306,13 +8321,18 @@ img.logo:hover {
   }
 }
 @media (orientation: portrait) {
-  /* line 231, ../scss/app.scss */
+  /* line 255, ../scss/app.scss */
   .NewArticleContent {
     height: 85px;
   }
 }
 
-/* line 304, ../scss/app.scss */
+/* line 325, ../scss/app.scss */
+.ArticleDisplay {
+  zoom: 1;
+  position: relative;
+}
+/* line 330, ../scss/app.scss */
 .ArticleDisplay article h1 {
   font-size: 16px;
   color: #171A1D;
@@ -8320,14 +8340,14 @@ img.logo:hover {
   line-height: 1.3;
   text-transform: capitalize;
 }
-/* line 312, ../scss/app.scss */
+/* line 338, ../scss/app.scss */
 .ArticleDisplay article p {
   font-size: .675em;
   color: rgba(0, 0, 0, 0.8);
   font-family: 'Roboto', sans-serif;
   margin-top: .5em;
 }
-/* line 319, ../scss/app.scss */
+/* line 345, ../scss/app.scss */
 .ArticleDisplay article img {
   max-height: 100%;
   width: 100%;
@@ -8337,26 +8357,28 @@ img.logo:hover {
   margin: auto;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 301, ../scss/app.scss */
+  /* line 325, ../scss/app.scss */
   .ArticleDisplay {
-    padding-top: 2em;
+    top: -4em;
+    zoom: 1;
+    position: relative;
   }
-  /* line 333, ../scss/app.scss */
+  /* line 361, ../scss/app.scss */
   .ArticleDisplay article h1 {
     font-size: 24px;
   }
-  /* line 337, ../scss/app.scss */
+  /* line 365, ../scss/app.scss */
   .ArticleDisplay article p {
     font-size: .875em;
   }
 }
 
-/* line 344, ../scss/app.scss */
+/* line 372, ../scss/app.scss */
 .ArticleDisplayBlog {
-  padding-top: 2em;
   border-top: 4px solid firebrick;
+  padding-top: 1em;
 }
-/* line 350, ../scss/app.scss */
+/* line 378, ../scss/app.scss */
 .ArticleDisplayBlog article h1 {
   font-size: 24px;
   color: #171A1D;
@@ -8364,14 +8386,14 @@ img.logo:hover {
   line-height: 1.3;
   text-transform: capitalize;
 }
-/* line 358, ../scss/app.scss */
+/* line 386, ../scss/app.scss */
 .ArticleDisplayBlog article p {
   font-size: .875em;
   color: rgba(0, 0, 0, 0.53);
   font-family: 'Roboto', sans-serif;
   margin-top: .5em;
 }
-/* line 365, ../scss/app.scss */
+/* line 393, ../scss/app.scss */
 .ArticleDisplayBlog article img {
   max-height: 100%;
   width: 100%;
@@ -8380,8 +8402,15 @@ img.logo:hover {
   display: block;
   margin: auto;
 }
+@media only screen and (min-width: 40.063em) {
+  /* line 372, ../scss/app.scss */
+  .ArticleDisplayBlog {
+    margin-top: -6.22em;
+    padding-top: 2em;
+  }
+}
 
-/* line 378, ../scss/app.scss */
+/* line 410, ../scss/app.scss */
 .level {
   position: absolute;
   background-color: rgba(178, 34, 34, 0.78);
@@ -8396,7 +8425,7 @@ img.logo:hover {
   padding-left: 10px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 378, ../scss/app.scss */
+  /* line 410, ../scss/app.scss */
   .level {
     position: absolute;
     width: auto;
@@ -8411,13 +8440,13 @@ img.logo:hover {
   }
 }
 
-/* line 409, ../scss/app.scss */
+/* line 441, ../scss/app.scss */
 .ContentBody {
   padding: 2em 1em;
   background-color: rgba(255, 255, 255, 0);
   margin-top: -31px;
 }
-/* line 414, ../scss/app.scss */
+/* line 446, ../scss/app.scss */
 .ContentBody p {
   font-family: "Roboto Condensed";
   color: rgba(0, 0, 0, 0.72);
@@ -8426,14 +8455,14 @@ img.logo:hover {
   margin-bottom: 0;
 }
 
-/* line 423, ../scss/app.scss */
+/* line 455, ../scss/app.scss */
 .RecentArticles {
   font-size: 30px;
   font-weight: bold;
   padding-left: .4em;
   margin-top: .2em;
 }
-/* line 429, ../scss/app.scss */
+/* line 461, ../scss/app.scss */
 .RecentArticles h1 {
   font-size: 30px;
   font-family: "league-gothic";
@@ -8441,7 +8470,7 @@ img.logo:hover {
   text-transform: uppercase;
   word-spacing: 2px;
 }
-/* line 437, ../scss/app.scss */
+/* line 469, ../scss/app.scss */
 .RecentArticles p {
   margin-bottom: -.5rem;
   color: #90a6b3;
@@ -8449,13 +8478,13 @@ img.logo:hover {
   font-size: 14px;
 }
 
-/* line 446, ../scss/app.scss */
+/* line 478, ../scss/app.scss */
 .RecentArticlesMetaTitle {
   font-size: 30px;
   font-weight: bold;
   margin-top: .2em;
 }
-/* line 451, ../scss/app.scss */
+/* line 483, ../scss/app.scss */
 .RecentArticlesMetaTitle h1 {
   font-size: 46px;
   font-family: "league-gothic";
@@ -8463,23 +8492,23 @@ img.logo:hover {
   text-transform: capitalize;
   word-spacing: 2px;
 }
-/* line 462, ../scss/app.scss */
+/* line 494, ../scss/app.scss */
 .RecentArticlesMetaTitle p {
   margin-bottom: -.5rem;
   color: #9c9c9c;
   font-style: italic;
   font-size: 12px;
 }
-/* line 469, ../scss/app.scss */
+/* line 501, ../scss/app.scss */
 .RecentArticlesMetaTitle span {
   font-style: normal;
   font-size: 13px;
-  padding: 0px 2px;
+  padding: 0 2px;
   font-family: "Roboto Condensed", Arial, sans-serif;
   margin-left: 1px;
 }
 
-/* line 478, ../scss/app.scss */
+/* line 510, ../scss/app.scss */
 .RecentArticlesMetaTitle2 {
   background-image: url(/Media/bg-border-light.png);
   background-position: bottom;
@@ -8487,13 +8516,13 @@ img.logo:hover {
   padding-bottom: .7em;
 }
 
-/* line 485, ../scss/app.scss */
+/* line 517, ../scss/app.scss */
 .RecentArticlesMetaTitleBlog {
   display: inline-block;
   margin-right: 12px;
 }
 
-/* line 494, ../scss/app.scss */
+/* line 526, ../scss/app.scss */
 #BlogDescription {
   color: #999;
   font-size: 1rem;
@@ -8501,28 +8530,32 @@ img.logo:hover {
   margin-top: 1em;
 }
 
-/* line 503, ../scss/app.scss */
+/* line 533, ../scss/app.scss */
+.HomepageSidebar {
+  box-shadow: 5px 10px 10px #d9d9d7, -5px 0 10px transparent;
+}
+/* line 536, ../scss/app.scss */
 .HomepageSidebar ul {
   text-decoration: none;
   list-style: none;
   margin: 0;
 }
-/* line 509, ../scss/app.scss */
+/* line 542, ../scss/app.scss */
 .HomepageSidebar a {
   font-size: 12px;
   padding-left: 1em;
   display: block;
 }
-/* line 515, ../scss/app.scss */
+/* line 548, ../scss/app.scss */
 .HomepageSidebar p {
   margin: 1rem 0 1rem 0;
 }
 
-/* line 520, ../scss/app.scss */
+/* line 553, ../scss/app.scss */
 .CategoriesNaviation {
   padding: 1em 1em 0 1em;
 }
-/* line 523, ../scss/app.scss */
+/* line 556, ../scss/app.scss */
 .CategoriesNaviation span {
   padding-left: .8em;
   color: #333;
@@ -8530,11 +8563,11 @@ img.logo:hover {
   font-size: 16px;
   vertical-align: text-bottom;
 }
-/* line 531, ../scss/app.scss */
+/* line 564, ../scss/app.scss */
 .CategoriesNaviation .fa {
   color: #444;
 }
-/* line 535, ../scss/app.scss */
+/* line 568, ../scss/app.scss */
 .CategoriesNaviation h3 {
   font-size: 20px;
   color: white;
@@ -8544,22 +8577,23 @@ img.logo:hover {
   left: -25px;
   padding-left: 1.6em;
   -webkit-box-shadow: 0 2px 1px rgba(34, 25, 25, 0.6);
+  box-shadow: 0 2px 1px rgba(34, 25, 25, 0.6);
   font-family: 'League-gothic';
   margin-bottom: .5em;
 }
-/* line 548, ../scss/app.scss */
+/* line 582, ../scss/app.scss */
 .CategoriesNaviation li {
   padding: .2em 0;
 }
 
-/* line 554, ../scss/app.scss */
+/* line 588, ../scss/app.scss */
 .CategoriesNaviation li:hover {
   background-color: #EDEDED;
   border-left: 3px solid firebrick;
   margin-left: -3px;
 }
 
-/* line 565, ../scss/app.scss */
+/* line 599, ../scss/app.scss */
 .HomepageSidebarSeperate {
   width: 75%;
   display: block;
@@ -8569,50 +8603,51 @@ img.logo:hover {
   margin: 0 auto;
 }
 
-/* line 575, ../scss/app.scss */
+/* line 609, ../scss/app.scss */
 .footerBackground {
   background-color: #171717;
   height: auto;
   padding-top: 3em;
   padding-bottom: 7em;
 }
-/* line 581, ../scss/app.scss */
+/* line 615, ../scss/app.scss */
 .footerBackground p {
   font-size: 16px;
   color: #949494;
   font-family: "Roboto Condensed";
 }
-/* line 587, ../scss/app.scss */
+/* line 621, ../scss/app.scss */
 .footerBackground h3 {
   color: white;
   font-family: "Roboto Condensed";
   font-size: 20px;
 }
-/* line 593, ../scss/app.scss */
+/* line 627, ../scss/app.scss */
 .footerBackground a {
   color: #949494;
   text-decoration: underline;
 }
 
-/* line 599, ../scss/app.scss */
+/* line 633, ../scss/app.scss */
 .footertitle {
   border-bottom: 1px solid #444;
   margin-bottom: 1.5em;
   padding: 0 10px 20px 0;
 }
 
-/* line 605, ../scss/app.scss */
+/* line 639, ../scss/app.scss */
 .subscribeButton {
   float: right;
 }
 
-/* line 609, ../scss/app.scss */
+/* line 643, ../scss/app.scss */
 .newsletter {
   height: auto;
   background: white;
   padding: 20px;
+  box-shadow: 5px 10px 10px #d9d9d7, -5px 0 10px transparent;
 }
-/* line 614, ../scss/app.scss */
+/* line 649, ../scss/app.scss */
 .newsletter span {
   border-bottom: 2px solid #e23a3e;
   padding: 0 20px 10px 0;
@@ -8623,7 +8658,7 @@ img.logo:hover {
   font-family: "Roboto Condensed";
 }
 
-/* line 626, ../scss/app.scss */
+/* line 661, ../scss/app.scss */
 .recommended {
   height: auto;
   margin-top: 1.5em;
@@ -8632,7 +8667,7 @@ img.logo:hover {
   background-position: right;
   padding: 2em 1em 0 1em;
 }
-/* line 634, ../scss/app.scss */
+/* line 669, ../scss/app.scss */
 .recommended span {
   border-bottom: 2px solid #e23a3e;
   padding: 0 20px 10px 0;
@@ -8642,7 +8677,7 @@ img.logo:hover {
   display: inline-block;
   font-family: "Roboto Condensed";
 }
-/* line 644, ../scss/app.scss */
+/* line 679, ../scss/app.scss */
 .recommended h2 {
   font-size: 1.6em;
   font-family: "League-Gothic";
@@ -8669,7 +8704,7 @@ img.logo:hover {
             margin-bottom: .5em;
         }
 }*/
-/* line 673, ../scss/app.scss */
+/* line 708, ../scss/app.scss */
 .widget-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
@@ -8682,12 +8717,12 @@ img.logo:hover {
   width: 85%;
 }
 
-/* line 688, ../scss/app.scss */
+/* line 723, ../scss/app.scss */
 #sidebartitle h2 {
   font-size: 1em;
   padding: 1em 1em .8em 1em;
 }
-/* line 693, ../scss/app.scss */
+/* line 728, ../scss/app.scss */
 #sidebartitle img {
   width: 75px;
   height: 80px;
@@ -8697,7 +8732,7 @@ img.logo:hover {
   border-color: none;
   border: 0;
 }
-/* line 703, ../scss/app.scss */
+/* line 738, ../scss/app.scss */
 #sidebartitle h1 {
   float: right;
   width: 140px;
@@ -8708,19 +8743,19 @@ img.logo:hover {
   font-weight: bold;
   text-transform: none;
 }
-/* line 714, ../scss/app.scss */
+/* line 749, ../scss/app.scss */
 #sidebartitle article {
   display: block;
   padding-top: 1em;
   padding-bottom: 1em;
   height: 100px;
 }
-/* line 721, ../scss/app.scss */
+/* line 756, ../scss/app.scss */
 #sidebartitle h3 {
   font-size: .7rem;
   color: gray;
 }
-/* line 726, ../scss/app.scss */
+/* line 761, ../scss/app.scss */
 #sidebartitle span {
   font-size: 14px;
   font-weight: bold;
@@ -8737,13 +8772,13 @@ img.logo:hover {
   font-family: 'Roboto Condensed';
 }
 
-/* line 744, ../scss/app.scss */
+/* line 779, ../scss/app.scss */
 .TLDR {
   width: 100%;
   background: url(/Media/dota.jpg) fixed;
   margin: 3.5em 0;
 }
-/* line 749, ../scss/app.scss */
+/* line 784, ../scss/app.scss */
 .TLDR h3 {
   font-size: 46px;
   line-height: 1;
@@ -8751,7 +8786,7 @@ img.logo:hover {
   color: firebrick;
   font-family: "League-Gothic";
 }
-/* line 757, ../scss/app.scss */
+/* line 792, ../scss/app.scss */
 .TLDR span {
   color: #F2F2F2;
   font-size: 16px;
@@ -8760,23 +8795,23 @@ img.logo:hover {
   line-height: 2em;
 }
 
-/* line 766, ../scss/app.scss */
+/* line 801, ../scss/app.scss */
 .shadow {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: -20.8em;
-  height: 333px;
+  background-color: rgba(0, 0, 0, 0.35);
+  margin-top: -21.2em;
+  height: 339px;
   position: relative;
-  top: 333px;
+  top: 339px;
 }
 
-/* line 774, ../scss/app.scss */
+/* line 809, ../scss/app.scss */
 .ReleatedArticles {
   background-image: url(/Media/bg-border-light.png);
   background-position: top;
   background-repeat: repeat-x;
   padding-top: 1em;
 }
-/* line 781, ../scss/app.scss */
+/* line 816, ../scss/app.scss */
 .ReleatedArticles h3 {
   font-style: normal;
   font-size: 34px;
@@ -8784,41 +8819,41 @@ img.logo:hover {
   color: #2A3035;
   margin-bottom: 15px;
 }
-/* line 789, ../scss/app.scss */
+/* line 824, ../scss/app.scss */
 .ReleatedArticles ul {
   list-style: none;
 }
 
-/* line 797, ../scss/app.scss */
+/* line 832, ../scss/app.scss */
 .FeatureArticles h3 {
   font-style: normal;
   font-size: 28px;
   font-family: "league-gothic";
   color: #2A3035;
 }
-/* line 804, ../scss/app.scss */
+/* line 839, ../scss/app.scss */
 .FeatureArticles img {
   padding: 0.5em;
   background: white;
 }
 
-/* line 810, ../scss/app.scss */
+/* line 845, ../scss/app.scss */
 .articlesExtended {
   margin: 4em 0;
 }
 
-/* line 816, ../scss/app.scss */
+/* line 851, ../scss/app.scss */
 .HomepageSidebarBlog ul, .HomepageSidebarBlog li {
   text-decoration: none;
   list-style: none;
   margin: 0;
   padding-bottom: .25em;
 }
-/* line 823, ../scss/app.scss */
+/* line 858, ../scss/app.scss */
 .HomepageSidebarBlog a {
   padding-left: 1em;
 }
-/* line 827, ../scss/app.scss */
+/* line 862, ../scss/app.scss */
 .HomepageSidebarBlog p {
   display: inline-block;
   width: 75%;
@@ -8827,68 +8862,68 @@ img.logo:hover {
   font-size: .9em;
   line-height: 1.4;
 }
-/* line 836, ../scss/app.scss */
+/* line 871, ../scss/app.scss */
 .HomepageSidebarBlog img {
   display: inline-block;
   margin-right: .8em;
   vertical-align: baseline;
 }
 
-/* line 843, ../scss/app.scss */
+/* line 878, ../scss/app.scss */
 .NewsletterTitle {
   margin-top: .7em;
 }
 
-/* line 847, ../scss/app.scss */
+/* line 882, ../scss/app.scss */
 .ReleatedPostTitle {
   margin-bottom: 2em;
 }
-/* line 850, ../scss/app.scss */
+/* line 885, ../scss/app.scss */
 .ReleatedPostTitle h2 {
   font-size: 1.6em;
   font-family: "League-Gothic";
   color: black;
   padding-top: 5px;
 }
-/* line 857, ../scss/app.scss */
+/* line 892, ../scss/app.scss */
 .ReleatedPostTitle span {
   color: #424242;
   font-family: Roboto Condensed;
   font-size: 16px;
 }
 
-/* line 864, ../scss/app.scss */
+/* line 899, ../scss/app.scss */
 ul.TopNavigation {
   background-color: white;
 }
 
-/* line 868, ../scss/app.scss */
+/* line 903, ../scss/app.scss */
 ul.SecondNavigation {
   padding-bottom: 1.5em;
   background-color: white;
 }
 
-/* line 873, ../scss/app.scss */
+/* line 908, ../scss/app.scss */
 #cssmenu {
   background-image: url(/Media/bg.png);
   padding-top: .5em;
   border-bottom: 3px solid black;
 }
-/* line 878, ../scss/app.scss */
+/* line 913, ../scss/app.scss */
 #cssmenu ul {
   text-align: center;
 }
-/* line 882, ../scss/app.scss */
+/* line 917, ../scss/app.scss */
 #cssmenu li {
   display: inline-block;
   width: 23%;
 }
-/* line 887, ../scss/app.scss */
+/* line 922, ../scss/app.scss */
 #cssmenu span {
   font-size: 14px;
   color: black;
 }
-/* line 892, ../scss/app.scss */
+/* line 927, ../scss/app.scss */
 #cssmenu a {
   display: block;
   border: 1px solid #d8d8d8;
@@ -8902,18 +8937,19 @@ ul.SecondNavigation {
   font-size: 13px;
   line-height: 20px;
   height: 25px;
-  border-bottom: 1px solid #d8d8d8;
+  /*border-bottom: 1px solid #d8d8d8;*/
   padding-bottom: 25px;
+  padding-left: 0;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 910, ../scss/app.scss */
+  /* line 946, ../scss/app.scss */
   #cssmenu span {
     font-size: 13px;
     color: black;
   }
 }
 
-/* line 921, ../scss/app.scss */
+/* line 957, ../scss/app.scss */
 .Product-Half-Ribbon {
   z-index: 100;
   position: absolute;
@@ -8927,7 +8963,7 @@ ul.SecondNavigation {
   padding-left: 20px;
   text-align: left;
 }
-/* line 934, ../scss/app.scss */
+/* line 970, ../scss/app.scss */
 .Product-Half-Ribbon span {
   display: block;
   font-size: 16px;
@@ -8937,11 +8973,11 @@ ul.SecondNavigation {
   color: #000;
   padding-right: 18px;
   background-image: url(http://thewirecutter.wpengine.netdna-cdn.com/wp-content/themes/thewirecutter/img/ribbon2.png);
-  background-position: 0px -46px;
+  background-position: 0 -46px;
   background-repeat: repeat-x;
 }
 
-/* line 948, ../scss/app.scss */
+/* line 984, ../scss/app.scss */
 .Product-Image {
   position: relative;
   float: left;
@@ -8949,7 +8985,7 @@ ul.SecondNavigation {
   margin-right: 10px;
 }
 
-/* line 955, ../scss/app.scss */
+/* line 991, ../scss/app.scss */
 .Product-Pricebox {
   margin-bottom: 10px;
   padding: 4px 6px;
@@ -8961,18 +8997,18 @@ ul.SecondNavigation {
   background-color: #dc3425;
   text-align: center;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
   display: block;
 }
-/* line 971, ../scss/app.scss */
+/* line 1007, ../scss/app.scss */
 .Product-Pricebox a {
   display: block;
   color: white;
 }
 
-/* line 980, ../scss/app.scss */
+/* line 1016, ../scss/app.scss */
 img.AmazonProductFormat {
   max-width: 160px;
   max-height: 200px;
@@ -8980,7 +9016,7 @@ img.AmazonProductFormat {
   margin: 0 auto;
 }
 
-/* line 987, ../scss/app.scss */
+/* line 1023, ../scss/app.scss */
 .Half-Ribbon {
   position: relative;
   background-image: url(http://thewirecutter.wpengine.netdna-cdn.com/wp-content/themes/thewirecutter/img/ribbon2.png);
@@ -8992,7 +9028,7 @@ img.AmazonProductFormat {
   text-align: left;
   top: 20px;
 }
-/* line 998, ../scss/app.scss */
+/* line 1034, ../scss/app.scss */
 .Half-Ribbon span {
   padding: 0 20px 10px 0;
   position: relative;
@@ -9002,7 +9038,7 @@ img.AmazonProductFormat {
   border-bottom: none;
 }
 
-/* line 1008, ../scss/app.scss */
+/* line 1044, ../scss/app.scss */
 .wobo {
   margin-bottom: 1em;
   background-image: url(/Media/bg-border-light.png);
@@ -9010,17 +9046,17 @@ img.AmazonProductFormat {
   background-repeat: repeat-x;
   padding-bottom: 2em;
 }
-/* line 1015, ../scss/app.scss */
+/* line 1051, ../scss/app.scss */
 .wobo p {
   width: 100%;
 }
 
-/* line 1020, ../scss/app.scss */
+/* line 1056, ../scss/app.scss */
 .AmazonButtons {
   padding-top: 15px;
 }
 
-/* line 1024, ../scss/app.scss */
+/* line 1060, ../scss/app.scss */
 .AmazonPercent {
   padding: 4px 6px;
   font-family: Roboto Condensed;
@@ -9028,25 +9064,24 @@ img.AmazonProductFormat {
   font-weight: 500;
   line-height: 20px;
   color: #fff;
-  background-color: #dc3425;
   text-align: center;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
   width: 20%;
   height: 30px;
   background-color: green;
   display: inline-block;
 }
-/* line 1042, ../scss/app.scss */
+/* line 1077, ../scss/app.scss */
 .AmazonPercent span {
   font-family: league-Gothic;
   font-size: 20px;
   border-bottom: none;
 }
 
-/* line 1049, ../scss/app.scss */
+/* line 1084, ../scss/app.scss */
 .AmazonReview {
   display: inline-block;
   padding: 5px 6px 5px 6px;
@@ -9057,84 +9092,133 @@ img.AmazonProductFormat {
   background-color: #dc3425;
   text-align: center;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
   width: 70%;
 }
-/* line 1064, ../scss/app.scss */
+/* line 1099, ../scss/app.scss */
 .AmazonReview a {
   color: white;
   padding: 0;
   font-weight: bold;
 }
 
-/* line 1071, ../scss/app.scss */
+/* line 1106, ../scss/app.scss */
 .SocialMedia {
   margin-bottom: 1em;
 }
-/* line 1074, ../scss/app.scss */
+/* line 1109, ../scss/app.scss */
 .SocialMedia li {
   display: inline-block;
   margin: 0 2px;
   margin-bottom: 1em;
 }
 
-/* line 1081, ../scss/app.scss */
+/* line 1116, ../scss/app.scss */
 .fa-3x {
   font-size: 2.3em !important;
 }
 
-/* line 1085, ../scss/app.scss */
+/* line 1120, ../scss/app.scss */
 .Selected {
   background-color: #EDEDED;
   border-left: 3px solid #2276b2;
   margin-left: -3px;
 }
 
-/* line 1091, ../scss/app.scss */
+/* line 1126, ../scss/app.scss */
 .CategoryIntro {
   text-align: center;
-  padding-bottom: .6em;
-  padding-right: 1.5em;
 }
-/* line 1096, ../scss/app.scss */
+/* line 1129, ../scss/app.scss */
 .CategoryIntro h1 {
-  font-family: "hwt-american-shopworn";
-  font-size: 36px;
+  font-family: "Open-Sans";
+  font-size: 2em;
   color: white;
-  text-decoration: underline;
 }
-/* line 1103, ../scss/app.scss */
-.CategoryIntro h2 {
-  font-family: "League-Gothic";
-  font-size: 30px;
-  color: white;
+/* line 1136, ../scss/app.scss */
+.CategoryIntro span {
+  text-shadow: 3px 5px black;
+  font-weight: 800;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1126, ../scss/app.scss */
+  .CategoryIntro {
+    margin-top: 1em;
+  }
+  /* line 1144, ../scss/app.scss */
+  .CategoryIntro h1 {
+    line-height: 1.2;
+    font-size: 2.8em;
+    text-align: left;
+    font-weight: 400;
+  }
+  /* line 1151, ../scss/app.scss */
+  .CategoryIntro span {
+    text-shadow: 3px 5px black;
+    font-weight: 800;
+  }
+  /* line 1156, ../scss/app.scss */
+  .CategoryIntro span:hover {
+    color: #EA2A2A;
+    transition: all 0.5s ease-out;
+  }
 }
 
-/* line 1112, ../scss/app.scss */
-.CategoryIntroDescription {
-  padding-right: 1.5em;
-  text-align: center;
-}
-/* line 1116, ../scss/app.scss */
+/* line 1167, ../scss/app.scss */
 .CategoryIntroDescription p {
-  color: #e8e8e8;
-  font-family: "league-gothic", sans-serif;
-  font-size: 22px;
-  line-height: 1.2;
+  font-family: "Open-Sans", sans-serif;
+  font-size: .875rem;
+  line-height: 1.6;
   padding-top: .8em;
-  border-top: 2px solid rgba(255, 255, 255, 0.71);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* line 1177, ../scss/app.scss */
+.CategoryIntroDescription span {
+  color: #EA2A2A;
+  font-weight: 800;
+}
+/* line 1182, ../scss/app.scss */
+.CategoryIntroDescription img {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  display: block;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1190, ../scss/app.scss */
+  .CategoryIntroDescription p {
+    text-align: left;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding-top: .8em;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  /* line 1199, ../scss/app.scss */
+  .CategoryIntroDescription span {
+    color: #EA2A2A;
+    font-weight: 800;
+  }
+  /* line 1204, ../scss/app.scss */
+  .CategoryIntroDescription img {
+    margin: 0;
+    margin-bottom: 2em;
+    display: block;
+  }
 }
 
-/* line 1126, ../scss/app.scss */
+/* line 1213, ../scss/app.scss */
 .NewArticleContenBANNER {
   width: 37%;
   float: right;
   padding: 1.2em .7em .7em .7em;
   border-top: 4px solid firebrick;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 1132, ../scss/app.scss */
+/* line 1220, ../scss/app.scss */
 .NewArticleContenBANNER h3 {
   color: White;
   font-size: 12px;
@@ -9143,15 +9227,15 @@ img.AmazonProductFormat {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 1141, ../scss/app.scss */
+/* line 1229, ../scss/app.scss */
 .NewArticleContenBANNER h1 {
   color: White;
   font-family: 'league-gothic', sans-serif;
   line-height: 1.3;
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: 2.3em;
 }
-/* line 1149, ../scss/app.scss */
+/* line 1237, ../scss/app.scss */
 .NewArticleContenBANNER p {
   color: White;
 }

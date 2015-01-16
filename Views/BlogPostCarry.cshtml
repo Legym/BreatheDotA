@@ -9,10 +9,11 @@
 
 }
 
+<div class="BlogIntroNavigation show-for-medium-up"></div>
+
 <section class="ArticleDisplayBlog">
     <!--Body Articles-->
     <div class="row">
-
         <div class="large-9 large-push-3 end columns">
             <div class="ContentBody">
                 <div class="RecentArticlesMetaTitle">
@@ -39,11 +40,8 @@
                     </ul>
                 </div>
                 <img src="@CurrentPage.CourseImageBanner" />
-
                 @CurrentPage.Description
-
                 @CurrentPage.Textbox
-
             </div>
         </div>
         <div class="show-for-large-up large-3 pull-9 end columns">
@@ -71,14 +69,11 @@
                             </div>
                         </div>
                     </form>
-
                 </div>
-
 
                 <div class="recommended">
                     @Umbraco.RenderMacro("DisplayAmazonProducts")
                 </div>
-
 
             </div>
         </div>
