@@ -1,0 +1,6 @@
+﻿2014-12-18 19:21:08,430 [65] INFO  umbraco.BusinessLogic.Log - [Thread 71] Log scrubbed.  Removed all items older than 2014-10-19 19:21:08
+2014-12-18 19:31:59,841 [65] INFO  Umbraco.Web.Security.WebSecurity - [Thread 71] User Id: 0 logged in
+2014-12-18 19:31:59,903 [65] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-12-18 19:31:59,903 [65] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-12-18 19:32:42,226 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 58] Content 'Recommended' with Id '0' has been published.
+2014-12-18 19:32:54,519 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 108] Content 'Recommended' with Id '1271' has been unpublished.

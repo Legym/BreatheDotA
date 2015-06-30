@@ -1,0 +1,7 @@
+﻿2015-02-03 09:06:39,971 [10] INFO  umbraco.BusinessLogic.Log - [Thread 8] Log scrubbed.  Removed all items older than 2014-12-05 09:06:39
+2015-02-03 19:04:06,213 [10] ERROR Umbraco.Web.Scheduling.KeepAlive - [Thread 133] Error in ping
+System.Net.WebException: The operation has timed out
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at Umbraco.Web.Scheduling.KeepAlive.Start(Object sender)

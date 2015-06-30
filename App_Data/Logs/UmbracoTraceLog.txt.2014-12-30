@@ -1,0 +1,132 @@
+﻿2014-12-30 00:51:05,624 [47] INFO  umbraco.BusinessLogic.Log - [Thread 68] Log scrubbed.  Removed all items older than 2014-10-31 00:51:05
+2014-12-30 00:59:28,514 [47] INFO  umbraco.BusinessLogic.Log - [Thread 112] Log scrubbed.  Removed all items older than 2014-10-31 00:59:28
+2014-12-30 00:59:28,746 [47] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 112] Application shutdown. Reason: HostingEnvironment
+2014-12-30 06:41:14,221 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-12-30 06:41:14,298 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 63ms)
+2014-12-30 06:41:14,330 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-12-30 06:41:14,814 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 35 (took 474ms)
+2014-12-30 06:41:14,939 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-12-30 06:41:14,955 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 18ms)
+2014-12-30 06:41:14,955 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-12-30 06:41:14,970 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 17ms)
+2014-12-30 06:41:15,017 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-12-30 06:41:15,033 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 4 (took 17ms)
+2014-12-30 06:41:15,033 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-12-30 06:41:15,049 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 13ms)
+2014-12-30 06:41:15,111 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-12-30 06:41:15,142 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 20ms)
+2014-12-30 06:41:15,142 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-12-30 06:41:15,158 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 17ms)
+2014-12-30 06:41:16,299 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-12-30 06:41:16,330 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 26ms)
+2014-12-30 06:41:16,345 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-12-30 06:41:16,377 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 21ms)
+2014-12-30 06:41:16,392 [12] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-12-30 06:41:18,303 [12] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-12-30 06:41:18,303 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-12-30 06:41:18,334 [12] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 27ms)
+2014-12-30 06:41:18,428 [12] INFO  Umbraco.Web.UmbracoModule - [Thread 9] Setting OriginalRequestUrl: breathedota.azurewebsites.net:80/umbraco
+2014-12-30 06:41:18,506 [12] INFO  umbraco.content - [Thread 9] Loading content from disk cache...
+2014-12-30 06:41:18,928 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-12-30 06:41:18,959 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 22ms)
+2014-12-30 06:41:22,459 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-12-30 06:41:22,491 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 41ms)
+2014-12-30 06:41:25,011 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+2014-12-30 06:41:25,043 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 2 (took 25ms)
+2014-12-30 06:41:26,449 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.interfaces.IDataType
+2014-12-30 06:41:26,496 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 50ms)
+2014-12-30 06:41:26,511 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.interfaces.ITree
+2014-12-30 06:41:26,543 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 33ms)
+2014-12-30 06:41:26,636 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.MacroEngines.IRazorDataTypeModel
+2014-12-30 06:41:26,683 [12] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.MacroEngines.IRazorDataTypeModel, found 2 (took 54ms)
+2014-12-30 21:57:09,260 [12] INFO  Umbraco.Web.Security.WebSecurity - [Thread 74] User Id: 0 logged in
+2014-12-30 21:57:09,635 [12] INFO  Umbraco.Core.PluginManager - [Thread 193] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-12-30 21:57:09,635 [12] INFO  Umbraco.Core.PluginManager - [Thread 193] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-12-30 21:57:59,539 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 134] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 21:57:59,696 [12] INFO  Umbraco.Core.PluginManager - [Thread 134] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-12-30 21:57:59,727 [12] INFO  Umbraco.Core.PluginManager - [Thread 134] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 31ms)
+2014-12-30 21:58:07,541 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 74] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 21:58:20,369 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 197] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 21:58:27,343 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 184] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 21:59:03,786 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 188] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 21:59:13,084 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 197] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 21:59:37,236 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 192] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 21:59:48,351 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 74] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:00:57,239 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 188] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:01:08,163 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 188] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:01:26,292 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 188] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:02:10,495 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 192] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:02:25,336 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 189] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:07:48,731 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 146] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:21:57,662 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 192] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:24:35,565 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 147] Content 'Beginner: Carry Post #2' with Id '1225' has been published.
+2014-12-30 22:24:45,834 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 165] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:25:17,142 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 159] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:25:44,653 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 159] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:25:58,046 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 6] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:29:02,929 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 176] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:29:17,140 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 175] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:29:24,084 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 165] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:30:45,587 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 6] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:31:07,228 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 167] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:34:29,869 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 164] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:35:17,029 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 175] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:35:51,635 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 175] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:36:03,126 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 164] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:36:15,994 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 162] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:39:05,426 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 169] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:39:23,623 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 175] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:41:14,775 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 148] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:41:48,452 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 155] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:41:59,600 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 163] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:42:20,938 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 171] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:42:35,429 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 149] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:43:27,336 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 185] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:44:10,031 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 170] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:44:25,102 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 170] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:45:04,913 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 149] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:45:14,699 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 148] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:45:39,178 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 186] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:45:47,810 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 199] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:46:05,783 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 161] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:46:42,917 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 195] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:46:52,570 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 163] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:47:23,515 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 74] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:47:32,499 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 188] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:47:43,566 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 199] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:47:44,740 [12] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 188] Index is being optimized, Provider=InternalIndexer, NodeId=-1
+2014-12-30 22:50:30,198 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 203] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:50:39,952 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 183] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:50:48,238 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 196] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:50:58,555 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 195] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:51:10,721 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 144] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:51:17,491 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 146] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:51:33,829 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 145] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:52:04,438 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 189] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:52:19,216 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 199] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:52:31,052 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 145] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:58:15,868 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 154] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:58:43,672 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 189] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:59:03,258 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 189] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:59:20,458 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 161] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 22:59:37,002 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 161] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:00:18,713 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 153] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:02:07,141 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 181] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:04:11,753 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 181] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:04:32,980 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 196] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:05:03,175 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 181] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:05:12,024 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 179] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:06:23,688 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 179] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:07:50,004 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 196] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:07:59,754 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 161] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:15:23,438 [12] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 160] Could not find persisted pre-value for field editor
+2014-12-30 23:15:23,438 [12] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 160] Could not find persisted pre-value for field hideLabel
+2014-12-30 23:46:45,746 [12] INFO  Umbraco.Web.Security.WebSecurity - [Thread 203] User Id: 0 logged in
+2014-12-30 23:54:02,203 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 153] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:54:16,468 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 164] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:55:05,988 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 179] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:55:30,380 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 166] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:55:45,523 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 167] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:55:51,696 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 180] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:55:59,254 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 138] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2014-12-30 23:57:48,416 [12] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 156] Content 'Beginner: Carry Post #1' with Id '1214' has been published.

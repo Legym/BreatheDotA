@@ -1,0 +1,7 @@
+﻿2015-03-17 14:46:53,762 [10] INFO  umbraco.BusinessLogic.Log - [Thread 50] Log scrubbed.  Removed all items older than 2015-01-16 14:46:53
+2015-03-17 20:18:20,849 [10] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - [Thread 93] An error occurred with the scheduled publishing
+System.Net.WebException: The remote server returned an error: (503) Server Unavailable.
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+   at System.Net.WebClient.UploadString(String address, String data)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.Start(ApplicationContext appContext)

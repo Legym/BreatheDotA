@@ -1,0 +1,4 @@
+﻿2015-06-04 00:47:35,266 [17] INFO  umbraco.BusinessLogic.Log - [Thread 146] Log scrubbed.  Removed all items older than 2015-04-05 00:47:35
+2015-06-04 03:43:38,557 [17] INFO  Umbraco.Web.Security.WebSecurity - [Thread 189] User Id: 0 logged in
+2015-06-04 03:43:38,776 [17] INFO  Umbraco.Core.PluginManager - [Thread 80] Starting resolution types of Umbraco.Web.Trees.TreeController
+2015-06-04 03:43:38,776 [17] INFO  Umbraco.Core.PluginManager - [Thread 80] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)

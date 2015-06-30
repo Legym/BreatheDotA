@@ -1,0 +1,14 @@
+﻿2015-05-16 00:33:47,646 [15] INFO  umbraco.content - [Thread 75] Loading content from disk cache...
+2015-05-16 00:33:50,446 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2015-05-16 00:33:50,603 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 157ms)
+2015-05-16 00:33:53,087 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2015-05-16 00:33:53,118 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 36ms)
+2015-05-16 00:33:53,650 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+2015-05-16 00:33:53,681 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 2 (took 26ms)
+2015-05-16 00:33:54,353 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Starting resolution types of umbraco.interfaces.IDataType
+2015-05-16 00:33:54,415 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 58ms)
+2015-05-16 00:33:54,415 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Starting resolution types of umbraco.interfaces.ITree
+2015-05-16 00:33:54,446 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 29ms)
+2015-05-16 00:33:54,556 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Starting resolution types of umbraco.MacroEngines.IRazorDataTypeModel
+2015-05-16 00:33:54,587 [15] INFO  Umbraco.Core.PluginManager - [Thread 75] Completed resolution of types of umbraco.MacroEngines.IRazorDataTypeModel, found 2 (took 30ms)
+2015-05-16 20:07:55,203 [15] INFO  umbraco.BusinessLogic.Log - [Thread 7] Log scrubbed.  Removed all items older than 2015-03-17 20:07:54

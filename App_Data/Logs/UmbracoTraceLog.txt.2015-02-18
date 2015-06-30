@@ -1,0 +1,7 @@
+﻿2015-02-18 05:21:24,294 [15] INFO  umbraco.BusinessLogic.Log - [Thread 108] Log scrubbed.  Removed all items older than 2014-12-20 05:21:24
+2015-02-18 22:21:39,417 [15] ERROR Umbraco.Web.Scheduling.KeepAlive - [Thread 105] Error in ping
+System.Net.WebException: The remote server returned an error: (503) Server Unavailable.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at Umbraco.Web.Scheduling.KeepAlive.Start(Object sender)

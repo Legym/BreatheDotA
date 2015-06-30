@@ -1,0 +1,34 @@
+﻿2014-12-16 05:40:47,672 [65] INFO  umbraco.BusinessLogic.Log - [Thread 100] Log scrubbed.  Removed all items older than 2014-10-17 05:40:47
+2014-12-16 23:35:41,077 [65] INFO  Umbraco.Web.Security.WebSecurity - [Thread 58] User Id: 0 logged in
+2014-12-16 23:35:41,186 [65] INFO  Umbraco.Core.PluginManager - [Thread 58] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-12-16 23:35:41,186 [65] INFO  Umbraco.Core.PluginManager - [Thread 58] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 2ms)
+2014-12-16 23:36:52,681 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #8' with Id '1116' has been unpublished.
+2014-12-16 23:36:53,087 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #7' with Id '1115' has been unpublished.
+2014-12-16 23:36:53,196 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #6' with Id '1114' has been unpublished.
+2014-12-16 23:36:53,274 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #5' with Id '1113' has been unpublished.
+2014-12-16 23:36:53,383 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #4' with Id '1112' has been unpublished.
+2014-12-16 23:36:53,461 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #3' with Id '1111' has been unpublished.
+2014-12-16 23:36:53,539 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #2' with Id '1110' has been unpublished.
+2014-12-16 23:36:53,648 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course #9' with Id '1117' has been unpublished.
+2014-12-16 23:36:53,742 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Course' with Id '1091' has been unpublished.
+2014-12-16 23:36:53,835 [65] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 112] Content 'Courses' with Id '1068' has been unpublished.
+2014-12-16 23:36:54,194 [65] INFO  Umbraco.Core.Persistence.UmbracoDatabase - [Thread 112]    at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery()
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+2014-12-16 23:37:11,557 [65] INFO  Umbraco.Core.Persistence.UmbracoDatabase - [Thread 58]    at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery()
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+2014-12-16 23:37:20,277 [65] INFO  umbraco.content - [Thread 18] Loading content from database...
+2014-12-16 23:37:24,365 [65] INFO  umbraco.content - [Thread 58] Loading content from database...
+2014-12-16 23:42:52,174 [65] WARN  Umbraco.Web.Mvc.RenderMvcController - [Thread 108] No physical template file was found for template SubcategoryMechanics
+2014-12-16 23:42:55,762 [65] WARN  Umbraco.Web.Mvc.RenderMvcController - [Thread 111] No physical template file was found for template SubcategoryMechanics

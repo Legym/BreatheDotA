@@ -1,0 +1,7 @@
+﻿2015-06-02 00:47:00,716 [17] INFO  umbraco.BusinessLogic.Log - [Thread 85] Log scrubbed.  Removed all items older than 2015-04-03 00:47:00
+2015-06-02 22:20:58,743 [17] INFO  Umbraco.Web.Security.WebSecurity - [Thread 180] User Id: 0 logged in
+2015-06-02 22:20:58,915 [17] INFO  Umbraco.Core.PluginManager - [Thread 122] Starting resolution types of Umbraco.Web.Trees.TreeController
+2015-06-02 22:20:58,915 [17] INFO  Umbraco.Core.PluginManager - [Thread 122] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2015-06-02 22:21:58,947 [17] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 99] Content 'Beginner: Carry Post #1' with Id '1214' has been published.
+2015-06-02 22:21:59,525 [17] INFO  Umbraco.Core.PluginManager - [Thread 99] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2015-06-02 22:21:59,806 [17] INFO  Umbraco.Core.PluginManager - [Thread 99] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 279ms)

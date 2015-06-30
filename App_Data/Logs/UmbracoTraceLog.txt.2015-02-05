@@ -1,0 +1,14 @@
+﻿2015-02-05 02:09:35,847 [15] INFO  umbraco.content - [Thread 152] Loading content from disk cache...
+2015-02-05 02:10:21,102 [15] INFO  Umbraco.Core.PluginManager - [Thread 142] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2015-02-05 02:10:21,133 [15] INFO  Umbraco.Core.PluginManager - [Thread 142] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 23ms)
+2015-02-05 05:35:39,347 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2015-02-05 05:35:39,379 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 37ms)
+2015-02-05 05:35:44,316 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+2015-02-05 05:35:44,332 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 2 (took 18ms)
+2015-02-05 05:35:44,785 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Starting resolution types of umbraco.interfaces.IDataType
+2015-02-05 05:35:44,832 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 46ms)
+2015-02-05 05:35:44,832 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Starting resolution types of umbraco.interfaces.ITree
+2015-02-05 05:35:44,863 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 25ms)
+2015-02-05 05:35:44,957 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Starting resolution types of umbraco.MacroEngines.IRazorDataTypeModel
+2015-02-05 05:35:44,973 [15] INFO  Umbraco.Core.PluginManager - [Thread 198] Completed resolution of types of umbraco.MacroEngines.IRazorDataTypeModel, found 2 (took 23ms)
+2015-02-05 18:13:59,999 [15] INFO  umbraco.BusinessLogic.Log - [Thread 226] Log scrubbed.  Removed all items older than 2014-12-07 18:13:59

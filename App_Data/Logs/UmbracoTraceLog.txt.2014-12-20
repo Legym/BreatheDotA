@@ -1,0 +1,53 @@
+﻿2014-12-20 00:08:55,506 [10] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - [Thread 88] An error occurred with the scheduled publishing
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+   at System.Net.WebClient.UploadString(String address, String data)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.Start(ApplicationContext appContext)
+2014-12-20 00:21:03,500 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-12-20 00:21:03,547 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 38ms)
+2014-12-20 00:21:06,923 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+2014-12-20 00:21:06,937 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 2 (took 22ms)
+2014-12-20 00:21:07,359 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Starting resolution types of umbraco.interfaces.IDataType
+2014-12-20 00:21:07,406 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 45ms)
+2014-12-20 00:21:07,421 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Starting resolution types of umbraco.interfaces.ITree
+2014-12-20 00:21:07,452 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 29ms)
+2014-12-20 00:21:07,531 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Starting resolution types of umbraco.MacroEngines.IRazorDataTypeModel
+2014-12-20 00:21:07,562 [10] INFO  Umbraco.Core.PluginManager - [Thread 80] Completed resolution of types of umbraco.MacroEngines.IRazorDataTypeModel, found 2 (took 28ms)
+2014-12-20 00:26:55,678 [10] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - [Thread 68] An error occurred with the scheduled publishing
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+   at System.Net.WebClient.UploadString(String address, String data)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.Start(ApplicationContext appContext)
+2014-12-20 00:41:55,813 [10] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - [Thread 61] An error occurred with the scheduled publishing
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+   at System.Net.WebClient.UploadString(String address, String data)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.Start(ApplicationContext appContext)
+2014-12-20 00:57:01,018 [10] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - [Thread 50] An error occurred with the scheduled publishing
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+   at System.Net.WebClient.UploadString(String address, String data)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.Start(ApplicationContext appContext)
+2014-12-20 01:13:30,133 [10] ERROR Umbraco.Web.Scheduling.KeepAlive - [Thread 42] Error in ping
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at Umbraco.Web.Scheduling.KeepAlive.Start(Object sender)
+2014-12-20 01:30:04,880 [10] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - [Thread 33] An error occurred with the scheduled publishing
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+   at System.Net.WebClient.UploadString(String address, String data)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.Start(ApplicationContext appContext)
+2014-12-20 01:45:56,377 [10] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - [Thread 41] An error occurred with the scheduled publishing
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+   at System.Net.WebClient.UploadString(String address, String data)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.Start(ApplicationContext appContext)
+2014-12-20 22:47:19,357 [10] INFO  umbraco.BusinessLogic.Log - [Thread 20] Log scrubbed.  Removed all items older than 2014-10-21 22:47:18
